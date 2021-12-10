@@ -1,60 +1,56 @@
 ---
-title: First Test of My Blog
+title: Text and Typography
 author:
   name: Piyazon
   link: https://piyazon.top
-date: 2021-12-06 14:32:00 +0800
-categories: [Blogging, Test]
-tags: [test]
+date: 2021-12-01 11:33:00 +0800
+categories: [Blogging, Demo]
+tags: [typography]
 math: true
 mermaid: true
-image:
-  src: /iytka.jpeg
-  alt: iytka
 ---
 
-## RTL language support
-<p class="alert alert-primary right-to-left">
-سالام قەشقەر
-</p>
+## Titles
 
-## image
-### image caption
+---
 
-![jason-Statham](/markdown-syntax-language.png)
-_I love markdown_
+# H1 - heading
 
-### image size
+<h2 data-toc-skip>H2 - heading</h2>
 
-![markdown](/markdown-syntax-language.png){: width="200"}
+<h3 data-toc-skip>H3 - heading</h3>
 
-## code block
+## <h4>H4 - heading</h4>
 
-```
-blablaba
-```
+<br>
 
-```markdown
-### title
-```
+## Paragraph
 
-{: .nolineno}
+I wandered lonely as a cloud
 
-```shell
-echo 'No more line numbers!'
-echo 'No more line numbers!'
-echo 'No more line numbers!'
+That floats on high o'er vales and hills,
 
-```
+When all at once I saw a crowd,
 
-{: file="path/to/file" }
+A host, of golden daffodils;
 
-```shell
-# content
-```
+Beside the lake, beneath the trees,
 
+Fluttering and dancing in the breeze.
 
-## list
+## Lists
+
+### Ordered list
+
+1. Firstly
+2. Secondly
+3. Thirdly
+
+### Unordered list
+
+- Chapter
+  - Section
+    - Paragraph
 
 ### Task list
 
@@ -73,28 +69,58 @@ Sun
 Moon
 : the natural satellite of the earth, visible by reflected light from the sun
 
+## Block Quote
+
+> This line to shows the Block Quote.
+
+## Tables
+
+| Company                      | Contact          | Country |
+| :--------------------------- | :--------------- | ------: |
+| Alfreds Futterkiste          | Maria Anders     | Germany |
+| Island Trading               | Helen Bennett    |      UK |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
+
+## Links
+
+<http://127.0.0.1:4000>
+
 ## Footnote
 
 Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
 
 ## Images
 
+- Default (with caption)
+
+![Desktop View](/jekyll/mockup.png){: width="972" height="589" }
+_Full screen width and center alignment_
+
+<br>
+
+- Shadow
+
+![Window shadow](/jekyll/window.png){: .shadow width="1548" height="864" style="max-width: 90%" }
+_shadow effect (visible in light mode)_
+
+<br>
+
 - Left aligned
 
-![Desktop View](/jekyll/mockup.png){: width="972" height="589" style="max-width: 60%" .normal}
+![Desktop View](/jekyll/mockup.png){: width="972" height="589" style="max-width: 70%" .normal}
 
 <br>
 
 - Float to left
 
-  ![Desktop View](/jekyll/mockup.png){: width="972" height="589" style="max-width: 100px" .left}
+  ![Desktop View](/jekyll/mockup.png){: width="972" height="589" style="max-width: 200px" .left}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
 <br>
 
 - Float to right
 
-  ![Desktop View](/jekyll/mockup.png){: width="972" height="589" style="max-width: 100px" .right}
+  ![Desktop View](/jekyll/mockup.png){: width="972" height="589" style="max-width: 200px" .right}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
 <br>
@@ -113,7 +139,7 @@ Click the hook will locate the footnote[^footnote], and here is another footnote
 
 The mathematics powered by [**MathJax**](https://www.mathjax.org/):
 
-$$ \sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6} $$
+$$ \sum\_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
@@ -123,10 +149,42 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 This is an example of `Inline Code`.
 
-## Custom Alert message
-<p class="alert alert-success">
-this is a success message
-</p>
+## Code block
+
+### Common
+
+```
+This is a common code snippet, without syntax highlight and line number.
+```
+
+### Specific Languages
+
+#### Console
+
+```console
+$ env |grep SHELL
+SHELL=/usr/local/bin/bash
+PYENV_SHELL=bash
+```
+
+#### Shell
+
+```bash
+if [ $? -ne 0 ]; then
+    echo "The command was not successful.";
+    #do the needful / exit
+fi;
+```
+
+### Specific filename
+
+```sass
+@import
+  "colors/light-typography",
+  "colors/dark-typography"
+```
+
+{: file='\_sass/jekyll-theme-chirpy.scss'}
 
 ## Reverse Footnote
 
