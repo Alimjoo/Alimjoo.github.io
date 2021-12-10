@@ -13,6 +13,7 @@ h1{
     font-family: ekran;
     direction: rtl;
     text-align: justify;
+    text-indent: 30px;
 }
 
 
@@ -28,7 +29,7 @@ h1{
 .post-content blockquote{
     border-right: 5px solid #007bff;
     padding-right: 1rem;
-    color: blue;
+    color: #007bff;
     border-left: initial;
     padding-left: initial;
 }
@@ -53,4 +54,13 @@ ul, ol > ul, ol > ul, ol{
 #core-wrapper li{
     font-family: ekran;
     text-align: justify;
+}
+
+/* Tera kahaz */
+
+.sub-title{
+    direction:rtl;
+    text-align:center;
+    font-family: chiwer;
+    color:#007bff;
 }
