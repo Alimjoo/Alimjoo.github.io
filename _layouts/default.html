@@ -68,7 +68,11 @@ mode="{{ site.theme_mode }}"
   <script>
     var h = document.getElementsByTagName("a");
     for (let i = 0; i < h.length; i++) {
-      h[i].setAttribute("dir", "auto")
+      h[i].setAttribute("dir", "auto");
+    }
+    var pre = document.getElementsByClassName("post-preview");
+    for (let j = 0; j < pre.length; j++) {
+      pre[j].setAttribute("dir", "auto");
     }
   </script>
 
