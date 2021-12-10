@@ -11,11 +11,11 @@ tags: [video]
 <!--Add a Simple HTML5 Video tag-->
 <video crossorigin="" playsinline="" data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png" id="player">
 
-<source src="https://piyazon.top/test/assets/videos/480.mp4" size="480">
+<source src="https://piyazon.top/storage/assets/videos/480.mp4" size="480">
 
-<source src="https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/80/71/420357180/420357180-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1639113468&gen=playurlv2&os=cosbv&oi=1866715013&trid=b9e51cc2c26944a8b954fcbad95f4441h&platform=html5&upsig=bb130a1ec45550e9ce9e08b310ce8458&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&bw=53483&logo=80000000" type="video/mp4" size="720">
+<source src="https://piyazon.top/storage/assets/videos/720.mp4" type="video/mp4" size="720">
 
-<source src="https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/80/71/420357180/420357180-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1639113468&gen=playurlv2&os=cosbv&oi=1866715013&trid=b9e51cc2c26944a8b954fcbad95f4441h&platform=html5&upsig=bb130a1ec45550e9ce9e08b310ce8458&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&bw=53483&logo=80000000" type="video/mp4" size="1080">
+<source src="https://piyazon.top/storage/assets/videos/1080.mp4" type="video/mp4" size="1080">
 
 <track kind="captions" label="ئۇيغۇرچە" srclang="ug" src="https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve/ug.vtt">
 
