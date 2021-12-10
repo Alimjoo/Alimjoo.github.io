@@ -1,0 +1,90 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: يازما
+  category: تۈر
+  tag: كارتۇكچا
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: باش بەت
+  categories: تۈرلەر
+  tags: كارتۇكچىلار
+  archives: ئارخىپ جانا
+  about: ھەققىدە
+
+# the text displayed in the search bar & search results
+search:
+  hint: ئىزدەش
+  cancel: بىكارقىل
+  no_results: ئاپلا! ھېچنىمە تېپىلمىدى.
+
+panel:
+  lastmod: يېقىنقى يېڭىلانما
+  trending_tags: مودا كارتۇكچىلار
+  toc: مۇندەرىجە
+
+#  The liquid date format › http://strftime.net/
+date_format:
+  tooltip: '%a, %b %e, %Y, %l:%M %p %z'
+  post:
+    long: '%b %e, %Y'
+    short: '%b %e'
+    archive_month: '%b'
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: بۇ يازما ئاپتور تەرىپىدىن :LICENSE_NAME ئىجازەتنامىسى ئاساسىدا تارقىتىلدى.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: ھەممە ھوقۇق ئاپتوردا
+  verbose: >-
+    باشقىچە ئەسكەرتىلگەنلىرىنى ھېسابقا ئالمىغاندا ، بۇ تور بېكەتتىكى بىلوگ يازمىلىرى ئاپتورنىڭ ئىجادىي ئورتاقلىق 4.0 خەلقئارالىق (CC BY 4.0) ئىجازەتنامىسىگە ئېرىشكەن.
+
+meta: Powered by :PLATFORM with :THEME theme.
+
+not_found:
+  statment: كەچۈرۈڭ ، بىز ئۇ URL نى خاتا ئورۇنلاشتۇردۇق ياكى ئۇ مەۋجۇت بولمىغان نەرسىنى كۆرسىتىپ بېرىدۇ.
+  hint_template: :HEAD_BAK قايتا سىناڭ، ياكى :ARCHIVES_PAGE دە ئىزدەڭ.
+  head_back: باش بەتكە قەيتىپ
+  archives_page: ئارخىپ بېتى
+
+# ----- Posts related labels -----
+
+post:
+  written_by: تەرىپىدىن
+  posted: تارقىتىلدى
+  updated: يېقىلاندى
+  timeago:
+    day: كۈن بۇرۇن
+    hour: سائەت بۇرۇن
+    minute: مىنۇت بۇرۇن
+    just_now: بايىلا
+  words: خەت
+  pageview_measure: كۆرۈش
+  read_time:
+    unit: مىنۇت
+    prompt: ئوقۇش
+  relate_posts: داۋاملىق ئوقۇش
+  share: ھەمبەھىرلىنىش
+  button:
+    next: يېڭىسى
+    previous: كونىسى
+    copy_code:
+      succeed: كۆچۈرۈلدى!
+    share_link:
+      title: ئادرىسنى كۆچۈرۈش
+      succeed: ئۇلىنىش مۇۋەپپەقىيەتلىك كۆچۈرۈلدى!
+  # pinned prompt of posts list on homepage
+  pin_prompt: ئۈستىگە تاقالدى
+
+# categories page
+categories:
+  category_measure: تۈرلەر
+  post_measure: يازمىلار

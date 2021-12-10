@@ -1,0 +1,77 @@
+---
+layout: compress
+# Default layout
+---
+
+<!DOCTYPE html>
+
+{% include lang.html %}
+
+{% capture prefer_mode %}
+{% if site.theme_mode %}
+mode="{{ site.theme_mode }}"
+{% endif %}
+{% endcapture %}
+
+<html lang="{{ site.lang }}" {{ prefer_mode }}>
+
+{% include head.html %}
+
+{% unless site.theme_mode %}
+{% include mode-toggle.html %}
+{% endunless %}
+
+<body data-spy="scroll" data-target="#toc">
+
+  {% include sidebar.html %}
+
+  {% include topbar.html %}
+
+  <div id="main-wrapper">
+    <div id="main">
+
+      {{ content }}
+
+      {% include footer.html %}
+
+    </div>
+
+    {% include search-results.html %}
+
+  </div> <!-- #main-wrapper -->
+
+  {% if page.mermaid %}
+  {% include mermaid.html %}
+  {% endif %}
+
+  <div id="mask"></div>
+
+  <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  {% include search-loader.html %}
+
+  {% include js-selector.html %}
+
+  <!-- Plyr Video Player -->
+
+  <script src="/assets/js/plyr/plyr.js"></script>
+  <script>
+    const player = new Plyr('#player');
+    const player1 = new Plyr('#player1');
+    const player2 = new Plyr('#player2');
+    const player3 = new Plyr('#player3');
+    const player4 = new Plyr('#player4');
+  </script>
+
+  <script>
+    var h = document.getElementsByTagName("a");
+    for (let i = 0; i < h.length; i++) {
+      h[i].setAttribute("dir", "auto")
+    }
+  </script>
+
+</body>
+
+</html>

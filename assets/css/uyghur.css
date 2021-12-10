@@ -1,0 +1,56 @@
+.post-content > h1, h2, h3{
+    direction: rtl;
+    font-family: chiwer;
+    text-align: right;
+}
+
+h1{
+    direction: rtl;
+    font-family: chiwer;
+    text-align: right;
+}
+.post-content p{
+    font-family: ekran;
+    direction: rtl;
+    text-align: justify;
+}
+
+
+.post-content p a img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-content code{
+    font-family: ekran;
+}
+
+.post-content blockquote{
+    border-right: 5px solid #007bff;
+    padding-right: 1rem;
+    color: blue;
+    border-left: initial;
+    padding-left: initial;
+}
+#related-posts h3{
+text-align: left;
+font-family: ekran;
+}
+
+ul, ol, li{
+    direction: rtl;
+    padding-left: 0px !important;
+}
+ul, ol{
+    padding-left: 0px !important;
+}
+ul, ol > ul, ol{
+    padding-left: 10px !important;
+}
+ul, ol > ul, ol > ul, ol{
+    padding-left: 10px !important;
+}
+li{
+    font-family: ekran;
+    text-align: justify;
+}

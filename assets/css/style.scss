@@ -1,0 +1,113 @@
+---
+---
+
+/*
+  If the number of TAB files has changed, the following variable is required.
+  And it must be defined before `@import`.
+*/
+$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
+
+@import "{{ site.theme }}";
+
+/* append your custom style below */
+
+// Video Player
+
+@import url(/assets/css/plyr/plyr.css);
+
+.plyr{
+  border-radius: 8px;
+  margin: 15px 0px;
+}
+
+@font-face {
+  font-family: chiwer;
+  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/ukijchik.ttf);
+}
+@font-face {
+  font-family: alpida;
+  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/alpida%20unicode%20system.ttf);
+}
+@font-face {
+  font-family: ekran;
+  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/alp.ttf);
+}
+@font-face {
+  font-family: kesmetuz;
+  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/ukijkesmetuz.ttf);
+}
+
+.mx-auto{
+  border: 2px solid rgb(94, 148, 233) !important;
+    border-radius: 50px !important;
+    padding: 0px 2.5px;
+  	background-color:lightgray;
+   box-shadow: 0 9px 6px -6px black;
+}
+
+.linux-logo{
+  border: 2px solid rgb(94, 148, 233);
+  border-radius: 30px !important;
+  padding: 0px 2.5px;
+  background-color:lightgray;
+ box-shadow: 0 8px 6px -6px black;
+}
+
+mjx-container[jax="CHTML"][display="true"] {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
+  display: none;
+}
+
+
+.right-to-left{
+  direction: rtl;
+  text-align: right;
+  font-family: chiwer;
+}
+
+.access,
+#archives,
+#tags,
+#page-tag,
+#page-category,
+.post-tags,
+#access-tags,
+#post-list .post-preview .post-content>p,
+#search-results .post-meta,
+#toc-wrapper
+{
+  font-family: kesmetuz;
+}
+
+#topbar-wrapper,
+#topbar-title,
+.post-navigation,
+#related-posts,
+.card-body h3,
+#post-list .post-preview h1,
+#page-tag > h1,
+#page-category > h1,
+.categories,
+#search-results a,
+#search-results p
+{
+  font-family: ekran;
+}
+
+// #post-list .post-preview .home-title{
+//   text-align: right;
+//   direction: rtl;
+//   color:var(--link-color);
+// }
+
+// #post-list .post-preview .home-title:hover {
+//   cursor: pointer;
+//   text-decoration: underline;
+//   color:rgb(197,102,68)
+// }
