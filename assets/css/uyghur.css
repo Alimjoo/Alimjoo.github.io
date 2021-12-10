@@ -50,7 +50,7 @@ ul, ol > ul, ol{
 ul, ol > ul, ol > ul, ol{
     padding-left: 10px !important;
 }
-li{
+#core-wrapper li{
     font-family: ekran;
     text-align: justify;
 }
