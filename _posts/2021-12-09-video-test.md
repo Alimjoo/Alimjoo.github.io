@@ -8,11 +8,6 @@ categories: [Blogging, Video]
 tags: [video, test]
 ---
 
-<script>
-  fetch("http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=wxv_1249774865931010049")
-            .then(res => console.log(res))
-</script>
-
 <!--Add a Simple HTML5 Video tag-->
 <video crossorigin="" playsinline="" data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png" id="player">
 
