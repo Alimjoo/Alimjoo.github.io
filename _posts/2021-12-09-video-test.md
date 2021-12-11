@@ -11,7 +11,7 @@ tags: [video, test]
 <!--Add a Simple HTML5 Video tag-->
 <video crossorigin="" playsinline="" data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png" id="player">
 
-<source src="https://piyazon.top/storage/assets/videos/480.mp4" size="480">
+<source src="https://piyazon.top/storage/assets/videos/480.mp4" type="video/mp4" size="480">
 
 <source src="https://piyazon.top/storage/assets/videos/720.mp4" type="video/mp4" size="720">
 
@@ -23,6 +23,8 @@ tags: [video, test]
 
 <track kind="captions" label="汉语" srclang="zh-CN" src="https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve/cn.vtt">
 </video>
+
+
 
 # 调整字幕
 
