@@ -13,9 +13,7 @@ h1{
     font-family: ekran;
     direction: rtl;
     text-align: justify;
-    text-indent: 30px;
 }
-
 
 .post-content p a img{
     width: 100%;
@@ -54,6 +52,10 @@ ul, ol > ul, ol > ul, ol{
 #core-wrapper li{
     font-family: ekran;
     text-align: justify;
+}
+
+#toc{
+    text-align: right;
 }
 
 /* Tera kahaz */
