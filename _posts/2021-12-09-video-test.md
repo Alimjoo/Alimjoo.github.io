@@ -37,11 +37,10 @@ tags: [video, test]
 
 1. 点击**播放器页面**右下角的设置 <span class="fa fa-cog"></span> 符号, 打开设置
 2. 然后选择 `Captions` 调到想要的字幕
-3.
-
-- 维语 ![ug](/jekyll/posts/ug.png)
-- 英语 ![en](/jekyll/posts/en.png)
-- 汉语 ![cn](/jekyll/posts/cn.png)
+3. 
+  - 维语 ![ug](/jekyll/posts/ug.png)
+  - 英语 ![en](/jekyll/posts/en.png)
+  - 汉语 ![cn](/jekyll/posts/cn.png)
 
 ## 调整清晰度
 
