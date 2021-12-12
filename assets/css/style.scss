@@ -22,19 +22,19 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 @font-face {
   font-family: chiwer;
-  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/ukijchik.ttf);
+  src: url(https://cdn.piyazon.top/assets/fonts/ukijchik.ttf);
 }
 @font-face {
   font-family: alpida;
-  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/alpida%20unicode%20system.ttf);
+  src: url(https://cdn.piyazon.top/assets/fonts/alpida%20unicode%20system.ttf);
 }
 @font-face {
   font-family: ekran;
-  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/alp.ttf);
+  src: url(https://cdn.piyazon.top/assets/fonts/alp.ttf);
 }
 @font-face {
   font-family: kesmetuz;
-  src: url(https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/uy-fonts/-/raw/main/ukijkesmetuz.ttf);
+  src: url(https://cdn.piyazon.top/assets/fonts/ukijkesmetuz.ttf);
 }
 
 .mx-auto{

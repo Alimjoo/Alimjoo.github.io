@@ -11,17 +11,17 @@ tags: [video, test]
 <!--Add a Simple HTML5 Video tag-->
 <video crossorigin="" playsinline="" data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png" id="player">
 
-<source src="https://siasky.net/AACsvpQDPVRizqQjNrU9kbfcXM7hzzQecwl9EvWrfz-Vpg" type="video/mp4" size="480">
+<source src="https://cdn.piyazon.top/assets/videos/480.mp4" type="video/mp4" size="480">
 
-<source src="https://siasky.net/AADpti41picwKKTn9OYIRMJihN5EZGFVC-UnvsE0gWh-3g" type="video/mp4" size="720">
+<source src="https://cdn.piyazon.top/assets/videos/720.mp4" type="video/mp4" size="720">
 
-<source src="https://siasky.net/AAATKntwjIlkKy_uKE1tM4qFRR8r97l7u7KRpm1O5v9mFw" type="video/mp4" size="1080">
+<source src="https://cdn.piyazon.top/assets/videos/1080.mp4" type="video/mp4" size="1080">
 
-<track kind="captions" label="ئۇيغۇرچە" srclang="ug" src="https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve/ug.vtt">
+<track kind="captions" label="ئۇيغۇرچە" srclang="ug" src="https://cdn.piyazon.top/assets/subtitles/ug.vtt">
 
-<track kind="captions" label="English" srclang="en" src="https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve/en.vtt">
+<track kind="captions" label="English" srclang="en" src="https://cdn.piyazon.top/assets/subtitles/en.vtt">
 
-<track kind="captions" label="汉语" srclang="zh-CN" src="https://api.allorigins.win/raw?url=https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve/cn.vtt">
+<track kind="captions" label="汉语" srclang="zh-CN" src="https://cdn.piyazon.top/assets/subtitles/cn.vtt">
 </video>
 
 

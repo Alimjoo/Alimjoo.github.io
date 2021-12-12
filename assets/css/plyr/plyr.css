@@ -145,16 +145,15 @@
 }
 
 .plyr__caption {
-  background: rgba(0, 0, 0, 0.8);
-  background: var(--plyr-captions-background, rgba(0, 0, 0, 0.6));
-  border-radius: 3px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  color: rgb(236, 236, 0);
+  color: #ffffff;
   line-height: 100%;
   padding: 0.2em 0.5em;
   white-space: pre-wrap;
   font-family: ekran;
+  font-size: 35px;
+  text-shadow: -1px -1px white, 0px -1px white, -1px 0px white, 1px 1px black, 0px 1px black, 1px 0px black;
 }
 
 .plyr__caption div {
