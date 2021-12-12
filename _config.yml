@@ -80,7 +80,12 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://git.lug.ustc.edu.cn/flame3/images/-/raw/main"
+
+# img_cdn: "https://git.lug.ustc.edu.cn/flame3/images/-/raw/main"
+
+img_cdn: "https://gitlab.com/Alimjoo/cnd-img/-/raw/main"
+
+
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/penguin.svg"
