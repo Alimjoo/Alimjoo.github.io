@@ -11,17 +11,17 @@ tags: [video, test]
 <!--Add a Simple HTML5 Video tag-->
 <video crossorigin="" playsinline="" data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png" id="player">
 
-<source src="https://cdn.piyazon.top/assets/videos/480.mp4" type="video/mp4" size="480">
+<source src="https://piyazon.top/storage/assets/videos/480.mp4" type="video/mp4" size="480">
 
-<source src="https://cdn.piyazon.top/assets/videos/720.mp4" type="video/mp4" size="720">
+<source src="https://piyazon.top/storage/assets/videos/720.mp4" type="video/mp4" size="720">
 
-<source src="https://cdn.piyazon.top/assets/videos/1080.mp4" type="video/mp4" size="1080">
+<source src="https://piyazon.top/storage/assets/videos/1080.mp4" type="video/mp4" size="1080">
 
-<track kind="captions" label="ئۇيغۇرچە" srclang="ug" src="https://cdn.piyazon.top/assets/subtitles/ug.vtt">
+<track kind="captions" label="ئۇيغۇرچە" srclang="ug" src="https://piyazon.top/storage/assets/subtitles/ug.vtt">
 
-<track kind="captions" label="English" srclang="en" src="https://cdn.piyazon.top/assets/subtitles/en.vtt">
+<track kind="captions" label="English" srclang="en" src="https://piyazon.top/storage/assets/subtitles/en.vtt">
 
-<track kind="captions" label="汉语" srclang="zh-CN" src="https://cdn.piyazon.top/assets/subtitles/cn.vtt">
+<track kind="captions" label="汉语" srclang="zh-CN" src="https://piyazon.top/storage/assets/subtitles/cn.vtt">
 </video>
 
 

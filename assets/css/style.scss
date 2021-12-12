@@ -22,19 +22,19 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 @font-face {
   font-family: chiwer;
-  src: url(https://cdn.piyazon.top/assets/fonts/ukijchik.ttf);
+  src: url(https://piyazon.top/storage/assets/fonts/ukijchik.ttf);
 }
 @font-face {
   font-family: alpida;
-  src: url(https://cdn.piyazon.top/assets/fonts/alpida%20unicode%20system.ttf);
+  src: url(https://piyazon.top/storage/assets/fonts/alpida%20unicode%20system.ttf);
 }
 @font-face {
   font-family: ekran;
-  src: url(https://cdn.piyazon.top/assets/fonts/alp.ttf);
+  src: url(https://piyazon.top/storage/assets/fonts/alp.ttf);
 }
 @font-face {
   font-family: kesmetuz;
-  src: url(https://cdn.piyazon.top/assets/fonts/ukijkesmetuz.ttf);
+  src: url(https://piyazon.top/storage/assets/fonts/ukijkesmetuz.ttf);
 }
 
 .mx-auto{
