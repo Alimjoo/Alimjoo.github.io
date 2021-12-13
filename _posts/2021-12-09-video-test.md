@@ -51,7 +51,7 @@ tags: [video, test]
       ],
       poster: 'https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png',
       previewThumbnails: {
-        src: '/path/to/thumbnails.vtt',
+        src: 'https://piyazon.top/storage/assets/subtitles/en.vtt',
       },
       tracks: [
         {
@@ -79,4 +79,4 @@ tags: [video, test]
 
 </script>
 
-blabla
+kakaka
