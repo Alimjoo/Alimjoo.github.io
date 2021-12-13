@@ -10,7 +10,8 @@ tags: [video, test]
 
 <!--Add a Simple HTML5 Video tag-->
 
-<video id="player" playsinline controls wxv="wxv_1941046890490281986"></video>
+<video id="player" playsinline controls wxv="wxv_1941046890490281986">
+</video>
 
 <script src="/assets/js/plyr/plyr.js"></script>
 <script>
@@ -48,10 +49,6 @@ tags: [video, test]
           size: 480,
         },
       ],
-      poster: 'https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png',
-      previewThumbnails: {
-        src: 'https://piyazon.top/storage/assets/subtitles/en.vtt',
-      },
       tracks: [
         {
           kind: 'captions',
@@ -76,12 +73,3 @@ tags: [video, test]
     }
   });
 </script>
-
-<script>
-  window.onload = function () {
-    player.play();
-  }
-</script>
-
-
-test
