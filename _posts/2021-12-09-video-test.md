@@ -12,13 +12,13 @@ tags: [video, test]
 
 
 <video crossorigin="" playsinline="" data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png"
-  id="player" wxv="wxv_1941046890490281986">
+  id="player" wxv="wxv_2171681512990048257">
 
-  <source class="p1s1" type="video/mp4" size="480">
+  <source class="p1s1" type="video/mp4" size="1080">
 
   <source class="p1s2" type="video/mp4" size="720">
 
-  <source class="p1s3" type="video/mp4" size="1080">
+  <source class="p1s3" type="video/mp4" size="480">
 
   <track kind="captions" label="ئۇيغۇرچە" srclang="ug" src="https://piyazon.top/storage/assets/subtitles/ug.vtt">
 
@@ -34,8 +34,8 @@ tags: [video, test]
     const gaoqing = respon['url_info'][1]['url'];
     const biaoqing = respon['url_info'][2]['url'];
     $("#player").attr("src", chaoqing);
-    $(".p1s1").attr("src", biaoqing);
+    $(".p1s1").attr("src", chaoqing);
     $(".p1s2").attr("src", gaoqing);
-    $(".p1s3").attr("src", chaoqing);
+    $(".p1s3").attr("src", biaoqing);
   });
 </script>
