@@ -40,5 +40,11 @@ tags: [video, test]
     $(".p1s2").attr("src", gaoqing);
     $(".p1s3").attr("src", biaoqing);
   });
-  const player = new Plyr("#player");
+  const player = new Plyr("#player", {
+    title: 'Example Title',
+    blankVideo: 'https://cdn.plyr.io/static/blank.mp4',
+    fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+    captions: { active: true, language: 'auto', update: false },
+    speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
+  });
 </script>
