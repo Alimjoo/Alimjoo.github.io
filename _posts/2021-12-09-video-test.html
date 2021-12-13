@@ -11,40 +11,72 @@ tags: [video, test]
 <!--Add a Simple HTML5 Video tag-->
 
 
-<video id="player" playsinline controls
-  data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png" wxv="wxv_2171681512990048257">
-
-  <source class="p1s1" type="video/mp4" size="1080">
-
-  <source class="p1s2" type="video/mp4" size="720">
-
-  <source class="p1s3" type="video/mp4" size="480">
-
-  <track kind="captions" label="ئۇيغۇرچە" srclang="ug" src="https://piyazon.top/storage/assets/subtitles/ug.vtt">
-
-  <track kind="captions" label="English" srclang="en" src="https://piyazon.top/storage/assets/subtitles/en.vtt">
-
-  <track kind="captions" label="汉语" srclang="zh-CN" src="https://piyazon.top/storage/assets/subtitles/cn.vtt">
-</video>
+<video id="player" playsinline controls wxv="wxv_2171681512990048257"></video>
 
 <script src="/assets/js/plyr/plyr.js"></script>
 <script>
-  const wxv = document.getElementById("player").getAttribute("wxv");
-  $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + wxv), function (data) {
-    const respon = jQuery.parseJSON(data.contents);
-    const chaoqing = respon['url_info'][0]['url'];
-    const gaoqing = respon['url_info'][1]['url'];
-    const biaoqing = respon['url_info'][2]['url'];
-    $("#player").attr("src", chaoqing);
-    $(".p1s1").attr("src", chaoqing);
-    $(".p1s2").attr("src", gaoqing);
-    $(".p1s3").attr("src", biaoqing);
-  });
   const player = new Plyr("#player", {
     title: 'Example Title',
     blankVideo: 'https://cdn.plyr.io/static/blank.mp4',
     fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
     captions: { active: true, language: 'auto', update: false },
     speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
+    quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
   });
+  const wxv = document.getElementById("player").getAttribute("wxv");
+  $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + wxv), function (data) {
+    const respon = jQuery.parseJSON(data.contents);
+    const chaoqing = respon['url_info'][0]['url'];
+    const gaoqing = respon['url_info'][1]['url'];
+    const biaoqing = respon['url_info'][2]['url'];
+    player.source = {
+      type: 'video',
+      title: 'Example title',
+      sources: [
+        {
+          src: chaoqing,
+          type: 'video/mp4',
+          size: 1080,
+        },
+        {
+          src: gaoqing,
+          type: 'video/mp4',
+          size: 720,
+        },
+        {
+          src: biaoqing,
+          type: 'video/mp4',
+          size: 480,
+        },
+      ],
+      poster: 'https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png',
+      previewThumbnails: {
+        src: '/path/to/thumbnails.vtt',
+      },
+      tracks: [
+        {
+          kind: 'captions',
+          label: 'ئۇيغۇرچە',
+          srclang: 'ug',
+          src: 'https://piyazon.top/storage/assets/subtitles/ug.vtt',
+          default: true,
+        },
+        {
+          kind: 'captions',
+          label: 'English',
+          srclang: 'en',
+          src: 'https://piyazon.top/storage/assets/subtitles/en.vtt',
+        },
+        {
+          kind: 'captions',
+          label: '汉语',
+          srclang: 'cn',
+          src: 'https://piyazon.top/storage/assets/subtitles/cn.vtt',
+        },
+      ],
+    }
+  });
+
 </script>
+
+blabla
