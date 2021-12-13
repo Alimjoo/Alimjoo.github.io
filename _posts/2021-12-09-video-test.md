@@ -20,16 +20,30 @@ tags: [video, test]
     default />
   <track kind="captions" label="汉语" src="http://piyazon.top/storage/assets/subtitles/cn.vtt" srclang="zh-CN" />
 </video>
-<script>
-  const wxv = document.getElementById("player").getAttribute("wxv");
-  $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + wxv), function (data) {
-    const respon = jQuery.parseJSON(data.contents);
-    const chaoqing = respon['url_info'][0]['url'];
-    const gaoqing = respon['url_info'][1]['url'];
-    const biaoqing = respon['url_info'][2]['url'];
-    $("#player").attr("src", chaoqing);
-    $(".p1s1").attr("src", chaoqing);
-    $(".p1s2").attr("src", gaoqing);
-    $(".p1s3").attr("src", biaoqing);
-  });
-</script>
+
+# 调整字幕
+
+## 打开字幕
+
+1. 首先点击**播放器页面**右下角的 `CC` 符号， 打开字幕。
+
+## 更换字幕
+
+1. 点击**播放器页面**右下角的设置 <span class="fa fa-cog"></span> 符号, 打开设置
+2. 然后选择 `Captions` 调到想要的字幕
+3. 
+  - 维语 ![ug](/jekyll/posts/ug.png)
+  - 英语 ![en](/jekyll/posts/en.png)
+  - 汉语 ![cn](/jekyll/posts/cn.png)
+
+## 调整清晰度
+
+还是在 设置 <span class="fa fa-cog"></span> 可以更改清晰度。
+
+## 调整快慢
+
+这个可以试着玩一玩
+
+## 悬窗播放
+
+暂时只支持电脑
