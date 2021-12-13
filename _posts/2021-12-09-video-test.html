@@ -26,6 +26,8 @@ tags: [video, test]
 
   <track kind="captions" label="汉语" srclang="zh-CN" src="https://piyazon.top/storage/assets/subtitles/cn.vtt">
 </video>
+
+<script src="/assets/js/plyr/plyr.js"></script>
 <script>
   const wxv = document.getElementById("player").getAttribute("wxv");
   $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + wxv), function (data) {
@@ -38,4 +40,5 @@ tags: [video, test]
     $(".p1s2").attr("src", gaoqing);
     $(".p1s3").attr("src", biaoqing);
   });
+  const player = new Plyr('#player');
 </script>
