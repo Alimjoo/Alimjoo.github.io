@@ -8,8 +8,8 @@ categories: [Blogging, Video]
 tags: [video, test]
 ---
 
-<video id="player" playsinline controls data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/Cumputer.png"
-  wxv="wxv_1941046890490281986" src="">
+<video id="player" playsinline controls data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png"
+  wxv="wxv_2171681512990048257" src="">
   <source src="" type="video/mp4" class="p1s1" size="1080" />
   <source src="" type="video/mp4" class="p1s2" size="720" />
   <source src="" type="video/mp4" class="p1s3" size="480" />
