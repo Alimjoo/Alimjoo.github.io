@@ -11,8 +11,8 @@ tags: [video, test]
 <!--Add a Simple HTML5 Video tag-->
 
 
-<video crossorigin="" playsinline="" data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png"
-  id="player" wxv="wxv_2171681512990048257">
+<video id="player" playsinline controls
+  data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png" wxv="wxv_2171681512990048257">
 
   <source class="p1s1" type="video/mp4" size="1080">
 
@@ -40,5 +40,5 @@ tags: [video, test]
     $(".p1s2").attr("src", gaoqing);
     $(".p1s3").attr("src", biaoqing);
   });
-  const player = new Plyr('#player');
+  const player = new Plyr("#player");
 </script>
