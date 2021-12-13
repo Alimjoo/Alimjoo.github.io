@@ -13,14 +13,7 @@ tags: [video, test]
 <video id="player" playsinline controls wxv="wxv_1941046890490281986">
 </video>
 
-<script src="/assets/js/plyr/plyr.js"></script>
 <script>
-  const player = new Plyr("#player", {
-    fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
-    captions: { active: true, language: 'auto', update: false },
-    speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
-    quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
-  });
   const wxv = document.getElementById("player").getAttribute("wxv");
   $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + wxv), function (data) {
     const respon = jQuery.parseJSON(data.contents);
@@ -71,5 +64,15 @@ tags: [video, test]
     }
   });
 </script>
+<script src="/assets/js/plyr/plyr.js"></script>
+<script>
+  const player = new Plyr("#player", {
+    fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+    captions: { active: true, language: 'auto', update: false },
+    speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
+    quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
+  });
+</script>
 
-test
+
+blabla
