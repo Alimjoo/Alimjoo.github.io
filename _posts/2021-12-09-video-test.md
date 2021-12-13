@@ -15,10 +15,10 @@ tags: [video, test]
   <source src="" type="video/mp4" class="p1s3" size="480" />
 
   <!-- Captions are optional -->
-  <track kind="captions" label="ئۇيغۇرچە" src="http://piyazon.top/storage/assets/subtitles/ug.vtt" srclang="ug" />
-  <track kind="captions" label="English" src="http://piyazon.top/storage/assets/subtitles/en.vtt" srclang="en"
+  <track kind="captions" label="ئۇيغۇرچە" src="https://piyazon.top/storage/assets/subtitles/ug.vtt" srclang="ug" />
+  <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/en.vtt" srclang="en"
     default />
-  <track kind="captions" label="汉语" src="http://piyazon.top/storage/assets/subtitles/cn.vtt" srclang="zh-CN" />
+  <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/cn.vtt" srclang="zh-CN" />
 </video>
 
 # 调整字幕
