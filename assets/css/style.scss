@@ -13,7 +13,7 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 // Video Player
 
-@import url(/assets/css/plyr/plyr.css);
+// @import url(/assets/css/plyr/plyr.css);
 
 
 .plyr{
