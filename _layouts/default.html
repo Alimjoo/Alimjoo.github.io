@@ -59,9 +59,9 @@ mode="{{ site.theme_mode }}"
     const wxv = document.getElementById("player").getAttribute("wxv");
     $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + wxv), function (data) {
       const respon = jQuery.parseJSON(data.contents);
-      const chaoqing = respon['url_info'][0]['url'];
-      const gaoqing = respon['url_info'][1]['url'];
-      const biaoqing = respon['url_info'][2]['url'];
+      const chaoqing = respon['url_info'][0]['url'].slice(0, 4) + "s" + respon['url_info'][0]['url'].slice(4);
+      const gaoqing = respon['url_info'][1]['url'].slice(0, 4) + "s" + respon['url_info'][1]['url'].slice(4);
+      const biaoqing = respon['url_info'][2]['url'].slice(0, 4) + "s" + respon['url_info'][2]['url'].slice(4);
       $("#player").attr("src", chaoqing);
       $(".p1s1").attr("src", chaoqing);
       $(".p1s2").attr("src", gaoqing);
