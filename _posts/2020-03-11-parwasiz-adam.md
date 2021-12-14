@@ -1,8 +1,8 @@
 ---
 title: پەرۋاسىز ئادەم
 author:
-name: Piyazon
-link: https://piyazon.top
+  name: Piyazon
+  link: https://piyazon.top
 date: 2020-03-11 13:01:00 +0800
 categories: [Blogging, Video]
 tags: [video]

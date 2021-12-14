@@ -1,8 +1,8 @@
 ---
 title: 网页视频播放器， 支持换字幕(支持维语)， 调整清晰度， 快慢进。。。
 author:
-name: Piyazon
-link: https://piyazon.top
+  name: Piyazon
+  link: https://piyazon.top
 date: 2021-12-09 05:32:00 +0800
 categories: [Blogging, Video]
 tags: [video, test]

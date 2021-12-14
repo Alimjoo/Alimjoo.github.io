@@ -1,8 +1,8 @@
 ---
 title: شاھرۇھ خاننىڭ تېد دىكى نۇتىقى
 author:
-name: Piyazon
-link: https://piyazon.top
+  name: Piyazon
+  link: https://piyazon.top
 date: 2020-03-15 15:46:00 +0800
 categories: [Blogging, Video]
 tags: [video]
