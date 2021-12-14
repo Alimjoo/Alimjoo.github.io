@@ -18,9 +18,9 @@ tags: [video]
   <source src="" type="video/mp4" class="p1s2" size="720" />
   <source src="" type="video/mp4" class="p1s3" size="480" />
 
-  <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/sharul-en.srt" srclang="en"
+  <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/sharul-en.vtt" srclang="en"
     default />
-  <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/sharul-cn.srt" srclang="zh-CN" />
+  <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/sharul-cn.vtt" srclang="zh-CN" />
 </video>
 
 > شاھرۇھ خاننىڭ ئىنسانىيەت ، شۆھرەت ۋە مۇھەببەت ھەققىدىكى ئويلىرى
