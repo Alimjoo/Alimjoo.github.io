@@ -18,3 +18,6 @@ tags: [video]
   <source src="" type="video/mp4" class="p1s2" size="720" />
   <source src="" type="video/mp4" class="p1s3" size="480" />
 </video>
+
+<script src="/assets/js/plyr/plyr.js"></script>
+<script src="/assets/js/plyr/weixin-out.js"></script>

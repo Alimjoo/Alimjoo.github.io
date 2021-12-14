@@ -24,3 +24,6 @@ tags: [video]
 </video>
 
 > شاھرۇھ خاننىڭ ئىنسانىيەت ، شۆھرەت ۋە مۇھەببەت ھەققىدىكى ئويلىرى
+
+<script src="/assets/js/plyr/plyr.js"></script>
+<script src="/assets/js/plyr/weixin-out.js"></script>

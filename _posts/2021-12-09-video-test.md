@@ -21,6 +21,9 @@ tags: [video, test]
   <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/cn.vtt" srclang="zh-CN" />
 </video>
 
+<script src="/assets/js/plyr/plyr.js"></script>
+<script src="/assets/js/plyr/weixin-out.js"></script>
+
 # 调整字幕
 
 ## 打开字幕
