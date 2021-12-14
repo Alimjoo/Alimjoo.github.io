@@ -5,7 +5,7 @@ author:
     link: https://piyazon.top
 date: 2020-03-27 22:33:00 +0800
 categories: [Blogging, Video]
-tags: [video, ئىتوت]
+tags: [video, ئىتوت, ئۇيغۇرچە]
 ---
 
 <style>

@@ -5,7 +5,7 @@ author:
   link: https://piyazon.top
 date: 2020-03-20 18:00:00 +0800
 categories: [Blogging, Video]
-tags: [video, كىنو]
+tags: [video, كىنو, ئۇيغۇرچە]
 ---
 
 <style>
