@@ -5,7 +5,7 @@ author:
   link: https://piyazon.top
 date: 2021-09-10 13:01:00 +0800
 categories: [Blogging, Video]
-tags: [video, كىنو, تۈرمىدىن قېچىش]
+tags: [video, كىنو, تۈرمىدىن قېچىش, ئۇيغۇرچە]
 ---
 
 <style>
