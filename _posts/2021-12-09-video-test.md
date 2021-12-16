@@ -10,10 +10,6 @@ tags: [video, test]
 
 <video id="player" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png"
   wxv="wxv_2171681512990048257" src="">
-  <source src="" type="video/mp4" class="p1s1" size="1080" />
-  <source src="" type="video/mp4" class="p1s2" size="720" />
-  <source src="" type="video/mp4" class="p1s3" size="480" />
-
   <!-- Captions are optional -->
   <track kind="captions" label="ئۇيغۇرچە" src="https://piyazon.top/storage/assets/subtitles/ug.vtt" srclang="ug" />
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/en.vtt" srclang="en"
@@ -21,7 +17,7 @@ tags: [video, test]
   <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/cn.vtt" srclang="zh-CN" />
 </video>
 
-<script src="/assets/js/plyr/plyr.js"></script>
+
 <script src="/assets/js/plyr/weixin-out.js"></script>
 
 # 调整字幕
