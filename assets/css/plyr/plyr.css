@@ -169,14 +169,14 @@
     padding: 0.2em 0.5em;
     white-space: pre-wrap;
     font-family: ekran;
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: -1px -1px white, 0px -1px white, -1px 0px white, 1px 1px black, 0px 1px black, 1px 0px black;
   }
 }
 
 @media screen and (min-width: 768px) {
   .plyr__caption {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
