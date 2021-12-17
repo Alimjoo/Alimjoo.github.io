@@ -82,8 +82,9 @@ mode="{{ site.theme_mode }}"
       });
     }
     if ($(".weixin_video").length > 0) {
-      $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
+      $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
         const respon = jQuery.parseJSON(data.contents);
+        $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
         switch (respon['url_info'].length) {
           case 3:
             $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
@@ -100,9 +101,8 @@ mode="{{ site.theme_mode }}"
           default:
             break;
         }
-        $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
-        video2player()
       });
+      video2player()
     }
   </script>
 
