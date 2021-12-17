@@ -67,8 +67,25 @@ mode="{{ site.theme_mode }}"
     }
   </script>
 
-  <!-- Plyr -->
+  <!-- Weixin out -->
   <script>
+
+  </script>
+
+  <!-- Plyr -->
+  <script src="/assets/js/plyr/plyr.js"></script>
+  <script>
+    function toHttps(wurl) {
+      return (wurl.slice(0, 4) + "s" + wurl.slice(4));
+    }
+    function video2player() {
+      const player = new Plyr("#player", {
+        fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+        captions: { active: true, language: 'auto', update: false },
+        speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
+        quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
+      });
+    }
     if ($(".weixin_video").length > 0) {
       $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
         const respon = jQuery.parseJSON(data.contents);
@@ -89,22 +106,9 @@ mode="{{ site.theme_mode }}"
             break;
         }
         $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
+        video2player()
       });
-
-      function toHttps(wurl) {
-        return (wurl.slice(0, 4) + "s" + wurl.slice(4));
-      }
-
     }
-  </script>
-  <script src="/assets/js/plyr/plyr.js"></script>
-  <script>
-    const player = new Plyr("#player", {
-      fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
-      captions: { active: true, language: 'auto', update: false },
-      speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
-      quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
-    });
   </script>
 
 </body>
