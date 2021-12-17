@@ -12,11 +12,11 @@ tags: [video, كىنو, ئۇيغۇرچە]
 @import url(/assets/css/uyghur.css);
 </style>
 
-<video id="player" playsinline controls
+<video id="player" class="weixin_video" playsinline controls
   data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/alimjan-bolumsizmu/alimjan-bolumsizmu.png"
   wxv="wxv_1255777835302748161" src="">
 </video>
 
-<script src="/assets/js/plyr/weixin-out.js"></script>
+
 
 > ئۇيغۇرچە كونا كىنو: «ئالىمجان بولۇمسىزمۇ ؟»

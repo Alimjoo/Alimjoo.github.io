@@ -4,12 +4,13 @@ layout: default
 
 {% include lang.html %}
 
+
 <div class="row{% unless layout.tail_includes %} alone{% endunless %}">
 
   <!-- core -->
   <div id="core-wrapper" class="col-12 col-lg-11 col-xl-8">
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
-    {% if page.dynamic_title or page.collection == 'tabs' %}
+      {% if page.dynamic_title or page.collection == 'tabs' %}
       <h1 class="dynamic-title">
         {%- capture tab_key -%}{{ page.url | split: '/' }}{%- endcapture -%}
         {{- site.data.locales[lang].tabs[tab_key] | default: page.title -}}
@@ -17,9 +18,9 @@ layout: default
       <div class="post-content">
         {% include refactor-content.html content=content %}
       </div>
-    {% else %}
+      {% else %}
       {% include refactor-content.html content=content %}
-    {% endif %}
+      {% endif %}
     </div>
   </div> <!-- #core-wrapper -->
 
@@ -32,8 +33,8 @@ layout: default
     </div>
 
     {% for _include in layout.pannel_includes %}
-      {% assign _include_path = _include | append: '.html' %}
-      {% include {{ _include_path }} %}
+    {% assign _include_path = _include | append: '.html' %}
+    {% include {{ _include_path }} %}
     {% endfor %}
   </div>
 
@@ -45,8 +46,8 @@ layout: default
   <div class="col-12 col-lg-11 col-xl-8">
     <div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
       {% for _include in layout.tail_includes %}
-        {% assign _include_path = _include | append: '.html' %}
-        {% include {{ _include_path }} %}
+      {% assign _include_path = _include | append: '.html' %}
+      {% include {{ _include_path }} %}
       {% endfor %}
     </div>
   </div>

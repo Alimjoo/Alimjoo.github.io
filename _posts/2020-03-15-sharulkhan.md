@@ -12,7 +12,7 @@ tags: [video, ئۇيغۇرچە]
 @import url(/assets/css/uyghur.css);
 </style>
 
-<video id="player" playsinline controls data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/sharul/sharul.png"
+<video id="player" class="weixin_video" playsinline controls data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/sharul/sharul.png"
   wxv="wxv_1252635469909819392" src="">
 
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/sharul-en.vtt" srclang="en"
@@ -21,5 +21,3 @@ tags: [video, ئۇيغۇرچە]
 </video>
 
 > شاھرۇھ خاننىڭ ئىنسانىيەت ، شۆھرەت ۋە مۇھەببەت ھەققىدىكى ئويلىرى
-
-<script src="/assets/js/plyr/weixin-out.js"></script>

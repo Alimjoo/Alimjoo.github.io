@@ -18,8 +18,8 @@ tags: [video, ئىتوت, ئۇيغۇرچە]
 <h2 class="sub-title">
   ھەۋەسكارنىڭ ھازىسى
 </h2>
-<video id="player" playsinline controls
+<video id="player" class="weixin_video" playsinline controls
   data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/abdu/0-4.jpg"
   wxv="wxv_1267658653109288961" src="">
 </video>
-<script src="/assets/js/plyr/weixin-out.js"></script>
+

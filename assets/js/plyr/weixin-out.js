@@ -29,14 +29,7 @@ $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.
         default:
             break;
     }
-    $('#player').after(`<script src="/assets/js/plyr/plyr.js"></script>`);
     $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
-    const player = new Plyr("#player", {
-        fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
-        captions: { active: true, language: 'auto', update: false },
-        speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
-        quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
-    });
 });
 
 function toHttps(wurl) {

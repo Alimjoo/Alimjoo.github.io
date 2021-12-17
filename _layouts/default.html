@@ -67,6 +67,46 @@ mode="{{ site.theme_mode }}"
     }
   </script>
 
+  <!-- Plyr -->
+  <script>
+    if ($(".weixin_video").length > 0) {
+      $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('http://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
+        const respon = jQuery.parseJSON(data.contents);
+        switch (respon['url_info'].length) {
+          case 3:
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="720" />`);
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][2]['url'])} type="video/mp4" size="480" />`);
+            break;
+          case 2:
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="720" />`);
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="480" />`);
+            break;
+          case 1:
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="480" />`);
+            break;
+          default:
+            break;
+        }
+        $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
+      });
+
+      function toHttps(wurl) {
+        return (wurl.slice(0, 4) + "s" + wurl.slice(4));
+      }
+
+    }
+  </script>
+  <script src="/assets/js/plyr/plyr.js"></script>
+  <script>
+    const player = new Plyr("#player", {
+      fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+      captions: { active: true, language: 'auto', update: false },
+      speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
+      quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
+    });
+  </script>
+
 </body>
 
 </html>

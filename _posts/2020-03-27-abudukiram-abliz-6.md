@@ -18,9 +18,8 @@ tags: [video, ئىتوت, ئۇيغۇرچە]
 <h2 class="sub-title">
   ھەۋەسكارنىڭ ھەسرىتى 1
 </h2>
-<video id="player" playsinline controls
+<video id="player" class="weixin_video" playsinline controls
   data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/abdu/0-5.jpg"
   wxv="wxv_1267660769001439232" src="">
 </video>
 
-<script src="/assets/js/plyr/weixin-out.js"></script>

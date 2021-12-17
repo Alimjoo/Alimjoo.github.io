@@ -12,12 +12,10 @@ tags: [video, كىنو, تۈرمىدىن قېچىش, ئۇيغۇرچە]
 @import url(/assets/css/uyghur.css);
 </style>
 
-<video id="player" playsinline controls data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/pb/0.jpg"
+<video id="player" class="weixin_video" playsinline controls data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/pb/0.jpg"
   wxv="wxv_2041224533751234564" src="">
 
   <track kind="captions" label="English&Chinese" src="https://piyazon.top/storage/assets/subtitles/pb/s01e01.vtt" srclang="en&zh-CN" default />
 </video>
-
-<script src="/assets/js/plyr/weixin-out.js"></script>
 
 ئامىرىكا كۆپ قىسىملىق تىلىۋىزىيە تىياتىرى: «تۈرمىدىن قېچىش».
