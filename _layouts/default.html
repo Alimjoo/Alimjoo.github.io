@@ -77,25 +77,6 @@ mode="{{ site.theme_mode }}"
       const respon = jQuery.parseJSON(data.contents);
       $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
       $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
-      // switch (respon['url_info'].length) {
-      //   case 3:
-      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
-      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="720" />`);
-      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][2]['url'])} type="video/mp4" size="480" />`);
-      //     video2player();
-      //     break;
-      //   case 2:
-      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="720" />`);
-      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="480" />`);
-      //     video2player();
-      //     break;
-      //   case 1:
-      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="480" />`);
-      //     video2player();
-      //     break;
-      //   default:
-      //     break;
-      // }
       const player = new Plyr("#player", {
         fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
         captions: { active: true, language: 'auto', update: false },

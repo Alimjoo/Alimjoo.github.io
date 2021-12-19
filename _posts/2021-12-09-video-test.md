@@ -5,7 +5,7 @@ author:
   link: https://piyazon.top
 date: 2021-12-09 05:32:00 +0800
 categories: [Blogging, Video]
-tags: [video, test]
+tags: [video]
 ---
 
 <style>
