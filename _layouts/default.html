@@ -90,20 +90,21 @@ mode="{{ site.theme_mode }}"
             $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
             $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="720" />`);
             $("#player").append(`<source src= ${toHttps(respon['url_info'][2]['url'])} type="video/mp4" size="480" />`);
-            video2player();
+            // video2player();
             break;
           case 2:
             $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="720" />`);
             $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="480" />`);
-            video2player();
+            // video2player();
             break;
           case 1:
             $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="480" />`);
-            video2player();
+            // video2player();
             break;
           default:
             break;
         }
+        video2player();
       });
     }
   </script>
