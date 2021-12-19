@@ -77,6 +77,7 @@ mode="{{ site.theme_mode }}"
       $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
         const respon = jQuery.parseJSON(data.contents);
         $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
+        $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
         // switch (respon['url_info'].length) {
         //   case 3:
         //     $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
