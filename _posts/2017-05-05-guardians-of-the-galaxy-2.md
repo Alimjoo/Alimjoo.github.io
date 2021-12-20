@@ -8,12 +8,15 @@ categories: [Blogging, Video]
 tags: [video, movie]
 ---
 
+<p class="alert alert-primary">
+本站上的视频都是在微信公众号上存储的， 而恰有个 ** 在公众号上声明原创了此电影（真无法理解）， 因此我无法上传清晰度较高的版本， 那个 ** 上传的 《银河护卫队2》 清晰度贼低， 根本没有观看感， 所以我在这儿把电影的 <em>磁力链接</em> 放上了, 想看的可以通过像 <i>qbittorent</i> 一样的软件下载观看。
+</p>
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/guardians-of-the-galaxy-2.jpeg"
-  wxv="wxv_2187722808724684809" src="">
-  <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/guardians-of-the-galaxy-2-ec.vtt" srclang="en"
-    default />
-</video>
+**银河护卫队2 Guardians of the Galaxy Vol. 2 (2017) 的磁力链接：**
+
+```
+magnet:?xt=urn:btih:11A2AC68A11634E980F265CB1433C599D017A759&dn=Guardians+of+the+Galaxy+2014+1080p+BluRay+x264+YIFY&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.pomf.se%3A80&tr=udp%3A%2F%2Ftracker.publicbt.com%3A80&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Ftracker.istole.it%3A80&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce
+```
 
 The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.
 
