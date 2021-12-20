@@ -81,7 +81,7 @@ mode="{{ site.theme_mode }}"
         quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
       });
     }
-    if ($("weixin_video").length) {
+    if ($(".weixin_video").length) {
       $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
         const respon = jQuery.parseJSON(data.contents);
         $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
