@@ -81,29 +81,31 @@ mode="{{ site.theme_mode }}"
         quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
       });
     }
-    $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
-      const respon = jQuery.parseJSON(data.contents);
-      $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
-      switch (respon['url_info'].length) {
-        case 3:
-          $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
-          $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="720" />`);
-          $("#player").append(`<source src= ${toHttps(respon['url_info'][2]['url'])} type="video/mp4" size="480" />`);
-          video2player();
-          break;
-        case 2:
-          $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="720" />`);
-          $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="480" />`);
-          video2player();
-          break;
-        case 1:
-          $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="480" />`);
-          video2player();
-          break;
-        default:
-          break;
-      }
-    });
+    if ($("weixin_video").length) {
+      $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
+        const respon = jQuery.parseJSON(data.contents);
+        $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
+        switch (respon['url_info'].length) {
+          case 3:
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="720" />`);
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][2]['url'])} type="video/mp4" size="480" />`);
+            video2player();
+            break;
+          case 2:
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="720" />`);
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="480" />`);
+            video2player();
+            break;
+          case 1:
+            $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="480" />`);
+            video2player();
+            break;
+          default:
+            break;
+        }
+      });
+    }
   </script>
 
 </body>
