@@ -12,7 +12,7 @@ order: 5
 
 ![mcu](/movie/mcu.png)
 
-# *Marvel Cinematic Universe* <b style="color: var(--primary);">Movies In Order<b>
+# *Marvel Cinematic Universe &ensp;* <b style="color: var(--primary);">Movies In Order</b>
 
 | Order    | Name                      | Release date |
 | :-: | :------------------------ | -----------: |
