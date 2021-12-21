@@ -16,6 +16,20 @@
 
 {% capture not_found %}<p class="mt-5">{{ site.data.locales[lang].search.no_results }}</p>{% endcapture %}
 
+  <!-- Video -->
+  <script>
+    function toHttps(wurl) {
+      return (wurl.slice(0, 4) + "s" + wurl.slice(4));
+    }
+    if ($(".weixin_video").length) {
+      console.log("yessssss");
+      $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
+        const respon = jQuery.parseJSON(data.contents);
+        $("#player").attr("src", toHttps(respon['url_info'][0]['url']));
+      });
+    }
+  </script>
+
 <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
 
 <script>
