@@ -49,3 +49,32 @@ function toHttps(wurl) {
 //     speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
 //     quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
 // });
+
+    // function video2player() {
+    //   const player = new Plyr("#player", {
+    //     fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+    //     captions: { active: true, language: 'auto', update: false },
+    //     speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5] },
+    //     quality: { default: 1080, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
+    //   });
+    // }
+
+          // switch (respon['url_info'].length) {
+      //   case 3:
+      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="1080" />`);
+      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="720" />`);
+      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][2]['url'])} type="video/mp4" size="480" />`);
+      //     video2player();
+      //     break;
+      //   case 2:
+      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="720" />`);
+      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][1]['url'])} type="video/mp4" size="480" />`);
+      //     video2player();
+      //     break;
+      //   case 1:
+      //     $("#player").append(`<source src= ${toHttps(respon['url_info'][0]['url'])} type="video/mp4" size="480" />`);
+      //     video2player();
+      //     break;
+      //   default:
+      //     break;
+      // }
