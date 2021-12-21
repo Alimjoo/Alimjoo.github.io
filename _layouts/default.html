@@ -67,7 +67,13 @@ mode="{{ site.theme_mode }}"
     }
   </script>
 
-
+  <!-- Audio -->
+  <script src="/assets/js/plyr/plyr.js"></script>
+  <script>
+    if ($("audio").length) {
+      const player = new Plyr("#audio_player");
+    }
+  </script>
 </body>
 
 </html>
