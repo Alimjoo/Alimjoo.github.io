@@ -13,7 +13,7 @@ tags: [video, كىنو, ئۇيغۇرچە]
 </style>
 
 <video id="player" class="weixin_video" playsinline controls
-  data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/alimjan-bolumsizmu/alimjan-bolumsizmu.png"
+  poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/alimjan-bolumsizmu/alimjan-bolumsizmu.png"
   wxv="wxv_1255777835302748161" src="">
 </video>
 

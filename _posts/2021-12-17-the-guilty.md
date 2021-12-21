@@ -9,11 +9,11 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/the_guilty.webp"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/the_guilty.webp"
   wxv="wxv_2183134802202198025" src="">
   <!-- Captions are optional -->
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/the_guilty-en.vtt" srclang="en"
-    default />
+      />
   <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/the_guilty-cn.vtt" srclang="zh-CN" />
 </video>
 

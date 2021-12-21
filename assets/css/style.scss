@@ -13,13 +13,11 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 // Video Player
 
-@import url(/assets/css/plyr/plyr.css);
-
-
-.plyr{
-  border-radius: 8px;
-  margin: 15px 0px;
-}
+// @import url(/assets/css/plyr/plyr.css);
+// .plyr{
+//   border-radius: 8px;
+//   margin: 15px 0px;
+// }
 
 @font-face {
   font-family: chiwer;
@@ -112,3 +110,13 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 //   text-decoration: underline;
 //   color:rgb(197,102,68)
 // }
+
+
+video{
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+video::cue{
+  font-family: ekran;
+}

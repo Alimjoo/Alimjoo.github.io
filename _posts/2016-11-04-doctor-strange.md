@@ -9,10 +9,10 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/doctor-strange.jpg"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/doctor-strange.jpg"
   wxv="wxv_2187718781035216897" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/doctor-strange-ec.vtt" srclang="en"
-    default />
+      />
 </video>
 
 After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.

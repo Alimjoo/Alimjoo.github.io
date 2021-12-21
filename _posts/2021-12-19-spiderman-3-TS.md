@@ -9,7 +9,7 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/no-way-home.jpg"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/no-way-home.jpg"
   wxv="wxv_2186388307893420035" src="">
 </video>
 

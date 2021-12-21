@@ -9,10 +9,10 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/guardians-of-the-galaxy-1.jpg"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/guardians-of-the-galaxy-1.jpg"
   wxv="wxv_2187722808724684809" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/guardians-of-the-galaxy-1-ec.vtt" srclang="en"
-    default />
+      />
 </video>
 
 Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.

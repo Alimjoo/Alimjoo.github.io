@@ -19,7 +19,7 @@ tags: [video, ئىتوت, ئۇيغۇرچە]
   ھەۋەسكارنىڭ يەنە بىر ھەۋىسى
 </h2>
 <video id="player"  class="weixin_video" playsinline controls
-  data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/abdu/0-3.jpg"
+  poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/abdu/0-3.jpg"
   wxv="wxv_1267655505183473665" src="">
 </video>
 

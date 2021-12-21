@@ -9,10 +9,10 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/captain-america-3.webp"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/captain-america-3.webp"
   wxv="wxv_2187714020936384515" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/captain-america-3-ec.vtt" srclang="en"
-    default />
+      />
 </video>
 
 Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.

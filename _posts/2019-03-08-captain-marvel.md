@@ -9,10 +9,10 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/captain-marvel.png"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/captain-marvel.png"
   wxv="wxv_2187718420291518465" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/captain-marvel-ec.vtt" srclang="en"
-    default />
+      />
 </video>
 
 The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.

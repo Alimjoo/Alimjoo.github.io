@@ -12,11 +12,11 @@ tags: [video, ئۇيغۇرچە]
 @import url(/assets/css/uyghur.css);
 </style>
 
-<video id="player" class="weixin_video" playsinline controls data-poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/sharul/sharul.png"
+<video id="player" class="weixin_video" playsinline controls poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/sharul/sharul.png"
   wxv="wxv_1252635469909819392" src="">
 
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/sharul-en.vtt" srclang="en"
-    default />
+      />
   <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/sharul-cn.vtt" srclang="zh-CN" />
 </video>
 
