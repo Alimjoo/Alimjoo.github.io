@@ -17,9 +17,9 @@ tags: [video, test]
   <track kind="captions" label="汉语" src="https://piyazon.top/storage/assets/subtitles/cn.vtt" srclang="zh-CN" />
 </video>
   <script>
-    // function toHttps(wurl) {
-    //   return (wurl.slice(0, 4) + "s" + wurl.slice(4));
-    // }
+    function toHttps(wurl) {
+      return (wurl.slice(0, 4) + "s" + wurl.slice(4));
+    }
     $.getJSON('https://api.allorigins.win/get?url=' + encodeURIComponent('https://mp.weixin.qq.com/mp/videoplayer?action=get_mp_video_play_url&vid=' + $("#player").attr("wxv")), function (data) {
       const respon = jQuery.parseJSON(data.contents);
       $("#player").attr("src", respon['url_info'][0]['url']);
