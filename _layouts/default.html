@@ -74,6 +74,33 @@ mode="{{ site.theme_mode }}"
       const player = new Plyr("#audio_player");
     }
   </script>
+
+  <script>
+    window.onkeyup = vidCtrl;
+    function vidCtrl(e) {
+      const vid = document.querySelector('video');
+      const key = e.code;
+      switch (key) {
+        case "ArrowLeft":
+          vid.currentTime = vid.currentTime - 15;
+          if (vid.currentTime < 0) {
+            vid.pause();
+            vid.currentTime = 0;
+          }
+          break;
+        case "ArrowRight":
+          vid.currentTime = vid.currentTime + 15;
+          if (vid.currentTime > vid.duration) {
+            vid.pause();
+            vid.currentTime = 0;
+          }
+          break;
+        default:
+          break;
+      }
+    }
+  </script>
+
 </body>
 
 </html>
