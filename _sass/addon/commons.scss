@@ -40,7 +40,9 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  // font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
 }
 
 /* --- Typography --- */
@@ -998,7 +1000,8 @@ $sidebar-display: "sidebar-display";
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: sans-serif;
+  // font-family: sans-serif;
+  font-family: 'Fira Code', monospace;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;

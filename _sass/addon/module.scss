@@ -7,7 +7,9 @@
 %heading {
   color: var(--heading-color);
   font-weight: 400;
-  font-family: 'Lato', 'Microsoft Yahei', sans-serif;
+  // font-family: 'Lato', 'Microsoft Yahei', sans-serif;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
 }
 
 %tag-hover {

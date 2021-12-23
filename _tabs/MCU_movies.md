@@ -4,11 +4,6 @@ icon: fas fa-info-circle
 order: 5
 ---
 
-<style>
-.table-wrapper{
-    font-family:Arial;
-}
-</style>
 
 ![mcu](/movie/mcu.png)
 
