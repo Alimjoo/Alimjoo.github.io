@@ -10,7 +10,7 @@ h1{
     text-align: right;
 }
 .post-content p{
-    font-family: ekran;
+    /* font-family: ekran; */
     direction: rtl;
     text-align: justify;
 }
@@ -18,10 +18,6 @@ h1{
 .post-content p a img{
     width: 100%;
     border-radius: 5px;
-}
-
-.post-content code{
-    font-family: ekran;
 }
 
 .post-content blockquote{
@@ -33,7 +29,7 @@ h1{
 }
 #related-posts h3{
 text-align: left;
-font-family: ekran;
+/* font-family: ekran; */
 }
 
 ul, ol, li{
@@ -50,12 +46,12 @@ ul, ol > ul, ol > ul, ol{
     padding-left: 10px !important;
 }
 #core-wrapper li{
-    font-family: ekran;
+    /* font-family: ekran; */
     text-align: justify;
 }
 
 #toc{
-    text-align: right;
+    direction: rtl;
 }
 
 /* Tera kahaz */
@@ -65,4 +61,13 @@ ul, ol > ul, ol > ul, ol{
     text-align:center;
     font-family: chiwer;
     color:#007bff;
+}
+
+/* font family */
+.post-content p,
+.post-content code,
+#related-posts h3,
+#core-wrapper li
+{
+    font-family: 'Noto Sans Arabic', sans-serif;
 }

@@ -35,6 +35,7 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
   font-family: kesmetuz;
   src: url(https://piyazon.top/storage/assets/fonts/ukijkesmetuz.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap');
 
 .mx-auto{
   border: 2px solid rgb(94, 148, 233) !important;
@@ -92,7 +93,7 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 #search-results a,
 #search-results p
 {
-  font-family: ekran;
+  font-family: 'Noto Sans Arabic', sans-serif;
 }
 
 // #post-list .post-preview .home-title{
