@@ -109,8 +109,14 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 #search-results p{
   text-align:left;
 }
-#post-list .post-preview .post-content>p{
+#post-list .post-preview .post-content>p,
+#post-list .post-preview h1
+{
   text-align: justify;
+}
+
+.mr-auto{
+  direction: ltr;
 }
 
 #archives{
