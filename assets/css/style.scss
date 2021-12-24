@@ -89,8 +89,6 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
   font-weight: normal;
 }
 
-
-
 #topbar-title,
 .post-navigation,
 #related-posts,
@@ -110,6 +108,9 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 
 #search-results p{
   text-align:left;
+}
+#post-list .post-preview .post-content>p{
+  text-align: justify;
 }
 
 #archives{
