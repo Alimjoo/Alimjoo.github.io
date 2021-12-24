@@ -82,7 +82,15 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 #post-list .post-preview .post-content>p,
 #search-results .post-meta,
 #toc-wrapper,
-#topbar-wrapper,
+#topbar-wrapper
+{
+  font-family: kesmetuz;
+  font-weight: normal;
+}
+
+
+
+
 #topbar-title,
 .post-navigation,
 #related-posts,
@@ -96,6 +104,10 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 {
   font-family: 'Noto Sans Arabic', sans-serif;
   font-weight: normal;
+}
+
+#archives{
+  letter-spacing: normal;
 }
 
 // #post-list .post-preview .home-title{
