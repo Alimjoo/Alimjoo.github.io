@@ -82,7 +82,8 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 #post-list .post-preview .post-content>p,
 #search-results .post-meta,
 #toc-wrapper,
-#topbar-wrapper
+#topbar-wrapper,
+#search-results p
 {
   font-family: kesmetuz;
   font-weight: normal;
@@ -95,15 +96,21 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 .post-navigation,
 #related-posts,
 .card-body h3,
-#post-list .post-preview h1,
 #page-tag > h1,
 #page-category > h1,
-.categories,
-#search-results a,
-#search-results p
+.categories
 {
   font-family: 'Noto Sans Arabic', sans-serif;
   font-weight: normal;
+}
+#search-results a,
+#post-list .post-preview h1{
+  font-family: ekran;
+  font-weight: normal;
+}
+
+#search-results p{
+  text-align:left;
 }
 
 #archives{
