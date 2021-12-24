@@ -2,12 +2,14 @@
     direction: rtl;
     font-family: chiwer;
     text-align: right;
+    font-weight: normal;
 }
 
 h1{
     direction: rtl;
     font-family: chiwer;
     text-align: right;
+    font-weight: normal;
 }
 .post-content p{
     /* font-family: ekran; */
@@ -61,6 +63,7 @@ ul, ol > ul, ol > ul, ol{
     text-align:center;
     font-family: chiwer;
     color:#007bff;
+    font-weight: normal;
 }
 
 /* font family */
@@ -70,4 +73,5 @@ ul, ol > ul, ol > ul, ol{
 #core-wrapper li
 {
     font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: normal;
 }
