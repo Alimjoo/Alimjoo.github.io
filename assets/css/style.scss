@@ -29,13 +29,17 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 }
 @font-face {
   font-family: ekran;
-  src: url(https://piyazon.top/storage/assets/fonts/alp.ttf);
+  src: url(https://piyazon.top/storage/assets/fonts/ukijekran.ttf);
 }
 @font-face {
   font-family: kesmetuz;
   src: url(https://piyazon.top/storage/assets/fonts/ukijkesmetuz.ttf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap');
+@font-face {
+  font-family: ukij_tor;
+  src: url(https://piyazon.top/storage/assets/fonts/ukijtor.ttf);
+}
+
 
 .mx-auto{
   border: 2px solid rgb(94, 148, 233) !important;
@@ -95,13 +99,10 @@ mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
 .card-body h3,
 #page-tag > h1,
 #page-category > h1,
-.categories
-{
-  font-family: 'Noto Sans Arabic', sans-serif;
-  font-weight: normal;
-}
+.categories,
 #search-results a,
-#post-list .post-preview h1{
+#post-list .post-preview h1
+{
   font-family: ekran;
   font-weight: normal;
 }
