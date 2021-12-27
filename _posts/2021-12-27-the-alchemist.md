@@ -31,7 +31,7 @@ tags: [book]
 <center><h2 id="part-one">PART ONE</h2></center>
 
 
-The boy's name was Santiago . Dusk was falling as the boy arrived with his herd at an abandoned 
+The boy's name was Santiago. Dusk was falling as the boy arrived with his herd at an abandoned 
 church. The roof had fallen in long ago, and an enormous sycamore had grown on the spot where the 
 sacristy had once stood. 
 
