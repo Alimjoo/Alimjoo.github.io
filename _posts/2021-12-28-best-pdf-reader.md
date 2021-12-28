@@ -5,7 +5,7 @@ author:
     link: https://piyazon.top
 date: 2021-12-28 12:10:00 +0800
 categories: [Blogging, Tool]
-tags: [pdf, skim]
+tags: [pdf, macOS]
 ---
 
 <a href="https://skim-app.sourceforge.io/">
