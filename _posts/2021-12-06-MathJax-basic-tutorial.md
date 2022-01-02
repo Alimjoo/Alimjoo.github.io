@@ -745,7 +745,10 @@ You can use these together too. You can type $X\overset{a}{\underset{b}{\to}}Y$ 
 
 <h2 id="commutative-diagrams">Commutative diagrams</h2>
 
+*AMScd* diagrams must start with a "require":
+
 ```latex
+\require{AMScd}
 \begin{CD}
 A @>a>> B\\
 @V b V V= @VV c V\\
@@ -755,6 +758,7 @@ C @>>d> D
 get this diagram: 
 
 $$
+\require{AMScd}
 \begin{CD}
 A @>a>> B\\
 @V b V V= @VV c V\\
@@ -779,6 +783,7 @@ $$
 Another example:
 
 ```latex
+\require{AMScd}
 \begin{CD}
     A @>>> B @>{\text{very long label}}>> C \\
     @. @AAA @| \\
@@ -787,6 +792,7 @@ Another example:
 ```
 
 $$
+\require{AMScd}
 \begin{CD}
     A @>>> B @>{\text{very long label}}>> C \\
     @. @AAA @| \\
@@ -797,21 +803,18 @@ $$
 Long labels increase the length of the arrow and in this version also automatically increase corresponding arrows.
 
 ```latex
+\require{AMScd}
 \begin{CD}
   RCOHR'SO_3Na @>{\text{Hydrolysis,$\Delta, Dil.HCl$}}>> (RCOR')+NaCl+SO_2+ H_2O
 \end{CD}
 ```
 
 $$
+\require{AMScd}
 \begin{CD}
   \text{RCOHR'SO$_3$Na} @>{\text{Hydrolysis, $\Delta,$ Dil. HCl}}>> \text{(RCOR')+NaCl+SO$_2$+ H$_2$O} 
 \end{CD}
 $$
-
-
-<p class="alert alert-primary">
-obviously this diagram is not working correctly on my website, may it will work for other sites.
-</p>
 
 <h2 id="continued-fractions">Continued fractions</h2>
 

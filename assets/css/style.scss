@@ -57,16 +57,28 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
  box-shadow: 0 8px 6px -6px black;
 }
 
-mjx-container[jax="CHTML"][display="true"] {
+// mjx-container[jax="CHTML"][display="true"] {
+//   overflow-x: scroll;
+//   overflow-y: hidden;
+//   -ms-overflow-style: none;  /* IE and Edge */
+//   scrollbar-width: none;  /* Firefox */
+// }
+
+// mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
+//   display: none;
+// }
+
+.MathJax_Display {
   overflow-x: scroll;
   overflow-y: hidden;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar{
+.MathJax_Display::-webkit-scrollbar {
   display: none;
 }
+
 
 
 .right-to-left{
