@@ -8,7 +8,7 @@ categories: [Blogging, Video]
 tags: [video, test]
 ---
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/videos/steve.png"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/videos/steve.png"
   wxv="wxv_2171681512990048257" src="">
   <!-- Captions are optional -->
   <track kind="captions" label="ئۇيغۇرچە" src="https://piyazon.top/storage/assets/subtitles/ug.vtt" srclang="ug" />

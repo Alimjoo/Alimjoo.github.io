@@ -81,9 +81,9 @@ theme_mode: # [light|dark]
 #
 # e.g. 'https://cdn.com'
 
-img_cdn: "https://git.lug.ustc.edu.cn/flame3/images/-/raw/main"
+# img_cdn: "https://piyazon.top/storage/images"
 
-# img_cdn: "https://gitlab.com/Alimjoo/cnd-img/-/raw/main"
+img_cdn: "https://gitlab.com/Alimjoo/cdn_img/-/raw/main"
 
 
 

@@ -9,7 +9,7 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/black-panther.jpg"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/movie/black-panther.jpg"
   wxv="wxv_2187705098225713155" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/black-panther-en.vtt" srclang="en"
       />

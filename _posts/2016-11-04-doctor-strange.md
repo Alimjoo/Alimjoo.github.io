@@ -9,7 +9,7 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/doctor-strange.jpg"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/movie/doctor-strange.jpg"
   wxv="wxv_2187718781035216897" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/doctor-strange-ec.vtt" srclang="en"
       />

@@ -19,7 +19,7 @@ tags: [video, ئىتوت, ئۇيغۇرچە]
   ھەۋەسكارنىڭ كىينكى ھەۋىسى
 </h2>
 <video id="player" class="weixin_video" playsinline controls
-  poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/abdu/0-2.jpg"
+  poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/old-salon/abdu/0-2.jpg"
   wxv="wxv_1267649982241406976" src="">
 </video>
 

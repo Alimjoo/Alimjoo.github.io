@@ -9,7 +9,7 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/guardians-of-the-galaxy-1.jpg"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/movie/guardians-of-the-galaxy-1.jpg"
   wxv="wxv_2187722808724684809" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/guardians-of-the-galaxy-1-ec.vtt" srclang="en"
       />

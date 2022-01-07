@@ -9,7 +9,7 @@ tags: [pdf, macOS]
 ---
 
 <a href="https://skim-app.sourceforge.io/">
-<img alt="Skim" src="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/skim.png"/>
+<img alt="Skim" src="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/skim.png"/>
 </a>
 
 I use the macOS default PDF reader `Preview` before, and I got some issue with it recently.

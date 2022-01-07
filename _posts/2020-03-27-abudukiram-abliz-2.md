@@ -18,7 +18,7 @@ tags: [video, ئىتوت, ئۇيغۇرچە]
   ھەۋەسكارنىڭ يېڭى ھەۋىسى
 </h2>
 <video id="player" class="weixin_video" playsinline controls
-  poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/old-salon/abdu/0-1.jpg"
+  poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/old-salon/abdu/0-1.jpg"
   wxv="wxv_1267648243316523009" src="">
 </video>
 

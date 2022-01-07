@@ -9,7 +9,7 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/captain-marvel.png"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/movie/captain-marvel.png"
   wxv="wxv_2187718420291518465" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/captain-marvel-ec.vtt" srclang="en"
       />

@@ -9,7 +9,7 @@ tags: [video, movie]
 ---
 
 
-<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://git.lug.ustc.edu.cn/flame3/images/-/raw/main/movie/captain-america-1.jpg"
+<video id="player" class="weixin_video" playsinline controls x-webkit-airplay poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/movie/captain-america-1.jpg"
   wxv="wxv_2187710675156860929" src="">
   <track kind="captions" label="English" src="https://piyazon.top/storage/assets/subtitles/captain-america-1-en.vtt" srclang="en"
       />
