@@ -189,16 +189,7 @@ EDITOR=vim visudo
 
 uncomment the line `%wheel ALL=(ALL) ALL`, save and exit.
 
-## Reboot
-
-exit the installation,
-```sh
-exit
-umount -a
-reboot
-```
-
-## Install iwd
+## Install iwd (optional)
 ```sh
 pacman -S iwd
 systemctl enable iwd.service
@@ -219,6 +210,16 @@ EnableNetworkConfiguration=true
 NameResolvingService=systemd
 ```
 
+## Reboot
+
+exit the installation,
+```sh
+exit
+umount -a
+reboot
+```
+
+
 ## Internet
 
 After reboot, connect the internet using `nmtui` command(is you want to use WiFi).
@@ -237,7 +238,7 @@ sudo pacman -S xorg
 ## Display Manager
 
 ```sh
-sudo pacman -S lightdm lightdm-gtk-greeter
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 sudo systemctl enable lightdm
 ```
 
