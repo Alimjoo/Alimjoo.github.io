@@ -162,7 +162,7 @@ pacman -S grub ntfs-3g networkmanager network-manager-applet wireless_tools wpa_
 ```
 istalling grub:
 ```sh
-grub-install --ratget=i386-pc /dev/sda
+grub-install --target=i386-pc /dev/sda
 ```
 generate grub configuration file:
 <p class="alert alert-primary">
@@ -245,7 +245,7 @@ sudo systemctl enable lightdm
 ## Desktop
 
 ```sh
-sudo pacman -S xfce4 xfce4-goodies chromium networkmanager-openvpn 
+sudo pacman -S xfce4 xfce4-goodies chromium 
 ```
 
 ## Yay
