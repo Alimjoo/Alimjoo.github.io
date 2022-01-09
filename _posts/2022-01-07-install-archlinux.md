@@ -122,7 +122,7 @@ Edit `locale.gen` file.
 ```sh
 vim /etc/locale.gen
 ```
-uncomment the langage you want to use. My case is `en_US.UTF-8 UTF-8`.
+uncomment the language you want to use. My case is `en_US.UTF-8 UTF-8`.
 
 Then generate the locale, and edit locale.conf, and vconsole.conf
 ```sh
@@ -136,7 +136,7 @@ echo "KEYMAP=us" >> /etc/vconsole.conf
 ```sh
 vim /etc/hostname
 ```
-set the nameof you computer(hostname)
+set the name of your computer(hostname), my case if `piyazon`.
 
 Then 
 ```sh
@@ -148,10 +148,15 @@ put these code to that file:
 ::1             localhost
 127.0.1.1       piyazon.localdomain     piyazon
 ```
+
+<p>
+Replace <code>piyazon</code> with your hostname that you set in the previous step
+</p>
+
 save and exit.
 
 ## Password
-gie a passwd to root user:
+give a passwd to root user:
 ```sh
 passwd
 ```
@@ -160,7 +165,7 @@ passwd
 ```sh
 pacman -S grub ntfs-3g networkmanager network-manager-applet wireless_tools wpa_supplicant os-prober mtools dosfstools base-devel linux-headers bluez bluez-utils pulseaudio-bluetooth cups reflector xdg-utils xdg-user-dirs
 ```
-istalling grub:
+installing grub:
 ```sh
 grub-install --target=i386-pc /dev/sda
 ```
@@ -222,9 +227,9 @@ reboot
 
 ## Internet
 
-After reboot, connect the internet using `nmtui` command(is you want to use WiFi).
+After reboot, connect the internet using `nmtui` command(if you want to use WiFi), or you can use [iwd](https://wiki.archlinux.org/title/Iwd#iwctl) if you have installed in the previous step.
 
-## Graphics Driver
+## Graphics Driver(optional, depends on you cpu)
 ```sh
 sudo pacman -S  xf86-video-intel
 ```
@@ -245,10 +250,10 @@ sudo systemctl enable lightdm
 ## Desktop
 
 ```sh
-sudo pacman -S xfce4 xfce4-goodies chromium 
+sudo pacman -S xfce4 xfce4-goodies safari
 ```
 
-## Yay
+## Yay(optional, you can install later when you needed)
 
 ```sh
 pacman -S --needed git base-devel
