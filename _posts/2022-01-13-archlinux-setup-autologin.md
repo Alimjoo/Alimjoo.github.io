@@ -3,7 +3,7 @@ title: Archliunux setup auto login (with lightdm)
 author:
     name: Piyazon
     link: https://piyazon.top
-date: 2022-01-07 12:10:00 +0800
+date: 2022-01-13 12:10:00 +0800
 categories: [Blogging, Tutorial]
 tags: [archlinux, linux]
 ---
