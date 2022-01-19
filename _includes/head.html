@@ -78,26 +78,4 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-
-  <!-- Subtitle Track -->
-  <script>
-    function write_sub(sub, lang) {
-      var sub_cdn = "https://api.allorigins.win/raw?url=https://gitlab.com/Alimjoo/storage/-/raw/main/subtitles/";
-      var sub_lang;
-      switch (lang) {
-        case "en":
-          sub_lang = "English";
-          break;
-        case "cn":
-          sub_lang = "汉语";
-          break;
-        case "ug":
-          sub_lang = "ئۇيغۇرچە";
-          break;
-        default:
-          break;
-      }
-      $("video").append(`<track kind="captions" label="${sub_lang}" src="${sub_cdn + sub}" srclang="${lang}" />`);
-    }
-  </script>
 </head>
