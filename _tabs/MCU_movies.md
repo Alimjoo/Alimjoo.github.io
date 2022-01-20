@@ -36,5 +36,5 @@ order: 5
 | 23 | [蜘蛛侠：英雄远征 Spider-Man: Far From Home (2019)](/posts/spider-man-2/) | July 2, 2019	 |
 | 24 | [黑寡妇 Black Widow (2021)](/posts/black-widow/) | July 9, 2021 |
 | 25 | [尚气与十环传奇 Shang-Chi and the Legend of the Ten Rings (2021)](/posts/shang-chi/) | September 3, 2021	 |
-| 26 | [永恒族 Eternals (2021)]() | November 5, 2021	 |
+| 26 | [永恒族 Eternals (2021)](/posts/Eternals) | November 5, 2021	 |
 | 27 | [蜘蛛侠：英雄无归 Spider-Man: No Way Home (2021)](/posts/spiderman-3-TS/) | December 17, 2021	 |
