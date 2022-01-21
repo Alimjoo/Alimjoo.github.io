@@ -164,3 +164,6 @@ video::cue{
   font-family: ekran;
   font-weight: normal;
 }
+video:focus {
+  outline: none;
+}
