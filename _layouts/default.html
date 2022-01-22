@@ -65,6 +65,10 @@ mode="{{ site.theme_mode }}"
     for (let j = 0; j < pre.length; j++) {
       pre[j].setAttribute("dir", "auto");
     }
+    var table = document.getElementsByClassName("table-wrapper");
+    for (let i = 0; i < table.length; i++) {
+      table[i].setAttribute("dir", "auto");
+    }
   </script>
 
   <!-- Audio -->

@@ -107,7 +107,7 @@ blockquote{
 #topbar-wrapper,
 #search-results p
 {
-  font-family: kesmetuz;
+  font-family: Georgia,Cambria, kesmetuz, kesmetuz;
   font-weight: normal;
 }
 
@@ -119,9 +119,10 @@ blockquote{
 #page-category > h1,
 .categories,
 #search-results a,
-#post-list .post-preview h1
+#post-list .post-preview h1,
+.table-wrapper
 {
-  font-family: ekran;
+  font-family: 'Lato', 'Microsoft Yahei', sans-serif, ekran;
   font-weight: normal;
 }
 
@@ -161,7 +162,7 @@ video{
   margin: 15px 0px;
 }
 video::cue{
-  font-family: ekran;
+  font-family: 'Lato', 'Microsoft Yahei', sans-serif, ekran;
   font-weight: normal;
 }
 video:focus {

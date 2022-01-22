@@ -78,3 +78,8 @@ ul, ol > ul, ol > ul, ol{
     font-family: ukij_tor;
     font-weight: normal;
 }
+
+.table-wrapper th{
+    font-family: chiwer;
+    font-weight: normal;
+  }
