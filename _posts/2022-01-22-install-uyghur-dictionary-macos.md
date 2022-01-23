@@ -34,7 +34,7 @@ tags: [ئۇيغۇرچە, macOS]
 
 ## ئۇيغۇرچە لۇغەتنى ھۆججىتىنى چۈشۈرۈش:
 
-*Gitee ئ‍ادرىسى:*
+*Gitee ئادرىسى:*
 ```
 https://gitee.com/flame2/UyDic
 ```
