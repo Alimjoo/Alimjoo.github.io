@@ -37,17 +37,17 @@ text-align: left;
 /* font-family: ekran; */
 }
 
-ul, ol, li{
+.post ul, ol, li{
     direction: rtl;
     padding-left: 0px !important;
 }
-ul, ol{
+.post ul, ol{
     padding-left: 0px !important;
 }
-ul, ol > ul, ol{
+.post ul, ol > ul, ol{
     padding-left: 10px !important;
 }
-ul, ol > ul, ol > ul, ol{
+.post ul, ol > ul, ol > ul, ol{
     padding-left: 10px !important;
 }
 #core-wrapper li{
