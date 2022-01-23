@@ -1,5 +1,5 @@
 ---
-title: ئالما كومپىيۇتىرغا ئ‍ۇيغۇرچە لۇغەت قاچىلاش
+title: ئالما كومپىيۇتىرغا ئۇيغۇرچە لۇغەت قاچىلاش
 author:
   name: Piyazon
   link: https://piyazon.top
