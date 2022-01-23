@@ -13,7 +13,7 @@ tags: [video, كىنو, تۈرمىدىن قېچىش, ئۇيغۇرچە]
 </style>
 
 <video id="player" class="weixin_video" playsinline controls poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/movie/pb/pb1.jpg"
-  wxv="wxv_2042471987524009985" src="">
+  wxv="wxv_2042471862198206466" src="">
 
   <track kind="captions" label="English&Chinese" src="https://piyazon.top/storage/assets/subtitles/pb/s01e09.vtt" srclang="en&zh-CN"   />
 </video>
