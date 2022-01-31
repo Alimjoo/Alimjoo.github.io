@@ -69,6 +69,10 @@ mode="{{ site.theme_mode }}"
     for (let i = 0; i < table.length; i++) {
       table[i].setAttribute("dir", "auto");
     }
+    var chlabel = $("track");
+    if (chlabel.attr("label") === "English&Chinese") {
+      chlabel.attr("label", "English&汉语");
+    }
   </script>
 
   <!-- Audio -->
