@@ -13,7 +13,7 @@ tags: [video, كىنو, تۈرمىدىن قېچىش, ئۇيغۇرچە]
 </style>
 
 <video id="player" class="weixin_video" playsinline controls poster="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/movie/pb/pb5.jpg"
-  wxv="wxv_2241774376604008449" src="">
+  wxv="wxv_2241774785045331969" src="">
 
   <track kind="captions" label="English&汉语" src="https://piyazon.top/storage/assets/subtitles/pb/s05e07.vtt" srclang="en&zh-CN"   />
 </video>
