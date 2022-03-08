@@ -32,8 +32,18 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
 
 <script>
+var inputter = document.getElementById('search-inputtt');
+document.getElementById('search-input').dispatchEvent(new Event('input', {bubbles:false}));
+const ENTER_KEY_CODE = 13;
+document.querySelector('#search-input').addEventListener('keyup', function(e) {
+  if (e.keyCode === ENTER_KEY_CODE) {
+    inputter.value = $(this).val();
+    inputter.dispatchEvent(new Event('input', {bubbles:true}));
+  }
+});
+
 SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
+  searchInput: document.getElementById('search-inputtt'),
   resultsContainer: document.getElementById('search-results'),
   json: '{{ '/assets/js/data/search.json' | relative_url }}',
   searchResultTemplate: '{{ result_elem | strip_newlines }}',

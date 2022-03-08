@@ -63,6 +63,8 @@
       <i class="fas fa-search fa-fw"></i>
       <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off"
         placeholder="{{ site.data.locales[lang].search.hint | capitalize }}..." dir="auto">
+        <input style="display: none;" class="form-control" id="search-inputtt" type="search" aria-label="search" autocomplete="off"
+        placeholder="{{ site.data.locales[lang].search.hint | capitalize }}..." dir="auto">
       <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
     </span>
     <span id="search-cancel">{{ site.data.locales[lang].search.cancel }}</span>
