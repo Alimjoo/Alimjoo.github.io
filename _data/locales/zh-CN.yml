@@ -15,10 +15,11 @@ tabs:
   tags: 标签
   archives: 归档
   about: 关于
+  MCU_movies: 漫威宇宙
 
 # the text displayed in the search bar & search results
 search:
-  hint: 搜索
+  hint: 别忘了按Enter
   cancel: 取消
   no_results: 搜索结果为空
 
@@ -29,11 +30,11 @@ panel:
 
 #  The liquid date format › http://strftime.net/
 date_format:
-  tooltip: '%F, %R %z'
+  tooltip: "%F, %R %z"
   post:
-    long: '%F'
-    short: '%m-%d'
-    archive_month: '%m月'
+    long: "%F"
+    short: "%m-%d"
+    archive_month: "%m月"
 
 copyright:
   # Shown at the bottom of the post
@@ -47,7 +48,7 @@ copyright:
   verbose: >-
     除非另有说明，本网站上的博客文章均由作者按照知识共享署名 4.0 国际 (CC BY 4.0) 许可协议进行授权。
 
-meta: 本站由 :PLATFORM 生成，采用 :THEME 主题。
+meta: 本站由Piyazon创建。
 
 not_found:
   statment: 抱歉，我们放错了该 URL，或者它指向了不存在的内容。
@@ -79,7 +80,7 @@ post:
     copy_code:
       succeed: 已复制！
     share_link:
-      title:  分享链接
+      title: 分享链接
       succeed: 链接已复制！
   # pinned prompt of posts list on homepage
   pin_prompt: 顶置

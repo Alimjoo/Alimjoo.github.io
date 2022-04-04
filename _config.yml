@@ -20,11 +20,10 @@ timezone: Asia/Shanghai
 
 title: Piyazon # the main title
 
-tagline: blank for now # it will display as the sub-title
+tagline: Fearless&Far # it will display as the sub-title
 
-description: >- # used by seo meta and the atom feed
-  Piyazon personal site. Linux & Macos Hack tips, MCU movies.
-
+description: # used by seo meta and the atom feed
+  Piyazon's personal blog. Linux & macOS Hack tips, MCU movies.
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://piyazon.top"
 
@@ -82,8 +81,6 @@ theme_mode: # [light|dark]
 # img_cdn: "https://piyazon.top/storage/images"
 
 img_cdn: "https://gitlab.com/Alimjoo/cdn_img/-/raw/main"
-
-
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/penguin.svg"
