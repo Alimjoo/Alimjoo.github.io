@@ -1,5 +1,5 @@
 ---
-title: Ubuntu 20.04 Nginx(1.8) PHP(7.4) SLL 修改php-fpm和nginx运行用户
+title: Ubuntu 20.04 Nginx(1.8) PHP(7.4) SSL(https) 修改php-fpm和nginx运行用户
 author:
   name: Piyazon
   link: https://piyazon.top
