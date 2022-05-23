@@ -45,7 +45,7 @@ document.querySelector('#search-input').addEventListener('keyup', function(e) {
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-inputtt'),
   resultsContainer: document.getElementById('search-results'),
-  json: '{{ '/assets/js/data/search.json' | relative_url }}',
+  json: '{{ "/assets/js/data/search.json" | relative_url }}',
   searchResultTemplate: '{{ result_elem | strip_newlines }}',
   noResultsText: '{{ not_found }}',
   templateMiddleware: function(prop, value, template) {
