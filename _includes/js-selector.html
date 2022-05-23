@@ -7,15 +7,14 @@
 {% if page.layout == 'post' %}
 {% if site.google_analytics.pv.proxy_endpoint or site.google_analytics.pv.cache_path %}
 <!-- pv-report needs countup.js -->
-<script async src="https://cdn.jsdelivr.net/npm/countup.js@1.9.3/dist/countUp.min.js"></script>
+<script async src="/assets/jsdelivr/countUp.min.js"></script>
 <script defer src="{{ '/assets/js/dist/pvreport.min.js' | relative_url }}"></script>
 {% endif %}
 {% endif %}
 
 {% if page.layout == 'post' or page.layout == 'page' %}
 <!-- image lazy-loading & popup -->
-<script
-  src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+<script src="/assets/jsdelivr/clipboard.min.js"></script>
 {% endif %}
 
 {% if page.layout == 'home'
@@ -69,7 +68,7 @@ or page.layout == 'page' %}
 
 <!-- commons -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/jsdelivr/bootstrap.bundle.min.js"></script>
 
 {% if jekyll.environment == 'production' %}
 <!-- PWA -->
