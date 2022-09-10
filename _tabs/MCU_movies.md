@@ -38,3 +38,5 @@ order: 5
 | 25 | [尚气与十环传奇 Shang-Chi and the Legend of the Ten Rings (2021)](/posts/shang-chi/) | September 3, 2021	 |
 | 26 | [永恒族 Eternals (2021)](/posts/Eternals) | November 5, 2021	 |
 | 27 | [蜘蛛侠：英雄无归 Spider-Man: No Way Home (2021)](/posts/spiderman-3-no-way-home/) | December 17, 2021	 |
+| 28 | [奇异博士2：疯狂多元宇宙 Doctor Strange in the Multiverse of Madness (2022)]() | May 04, 2022	 |
+| 29 | [雷神4：爱与雷霆 Thor: Love and Thunder (2022)](/posts/thor-thunder-and-love/) | July 06, 2022	 |
