@@ -13,6 +13,10 @@ image:
   alt: MathJax-logo
 ---
 
+<p class="alert alert-success">In case you want to practice, I made a website, feel free to check it out. <a href="https://piyazon.top/latex-practice-tool/" target="_blank">Latex Practice
+<img src="https://gitlab.com/Alimjoo/cdn_img/-/raw/main/latex/latex-practice.png">
+</a></p>
+
 # Basics
 
 - **For inline formulas, enclose the formula in `$...$`. For displayed formulas, use `$$...$$`.** <br>
