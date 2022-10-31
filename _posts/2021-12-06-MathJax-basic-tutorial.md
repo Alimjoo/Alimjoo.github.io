@@ -1205,10 +1205,6 @@ $$
 \text{45^{\large\circ}} & \text{renders as} & 45^{\large\circ}\\
 \text{45\unicode{xB0}} & \text{renders as} & 45\unicode{xB0} & \text{Actual Unicode character}\\
 \text{90°} & \text{renders as} & 90° & \text{Using keyboard entry of symbol}
-%
-% Use the following line as a template for additional entries
-%
-% \text{} & \text{renders as} &  \\
 \end{array}
 $$
 
