@@ -181,3 +181,9 @@ inter you email and follow the answers and select the domain and finish.
 Now revisit you domain name in your browser, your domain name will automatically secured as `https://`.
 
 # Navigating the Nextcloud Setup Wizard
+
+
+
+
+
+
