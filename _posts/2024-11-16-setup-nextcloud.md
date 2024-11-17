@@ -19,7 +19,11 @@ tags: [php, ubuntu, nextcloud, coturn, ssl, certbot]
 ```bash
 sudo vim /etc/hostname
 ```
-2. edit `/etc/hosts` and add this line `127.0.1.1 nc.example.com` below the localhost.
+2. edit `/etc/hosts` 
+```bash
+sudo vim /etc/hosts
+```
+and add this line `127.0.1.1 nc.example.com` below the localhost.
 make it looks like this:
 ```config
 127.0.0.1 localhost
