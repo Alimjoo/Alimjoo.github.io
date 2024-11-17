@@ -48,6 +48,9 @@ if ping through, follow the next step.
 first install MariaDB
 ```bash
 sudo apt install mariadb-server
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
+sudo systemctl status mariadb
 ```
 and secure install mysql
 ```bash 
@@ -74,6 +77,7 @@ after installing enable and start apache2:
 ```bash
 sudo systemctl enable apache2
 sudo systemctl start apache2
+sudo systemctl status apache2
 ```
 after that, verify the apache2 is correctly running by visit you domain `nc.example.com` from your browser, you will see **Apache2 Default Page**, then you can follow the next step, if not make sure previews step are done correctly.
 
@@ -82,7 +86,7 @@ download the nextcloud zip file by running:
 ```bash
 wget https://download.nextcloud.com/server/releases/latest.zip
 ```
-and then, install `unzip' and unzip the latest.zip file by runnig:
+and then, install `unzip` and unzip the latest.zip file by runnig:
 ```bash
 sudo apt install unzip
 unzip latest.zip
@@ -185,9 +189,162 @@ inter you email and follow the answers and select the domain and finish.
 Now revisit you domain name in your browser, your domain name will automatically secured as `https://`.
 
 # Navigating the Nextcloud Setup Wizard
+1. Inter those values and hit Install.
+![nextcloud navigate](/nextcloud/nextcloud_navigate.png)
 
+2. Choose Recommended apps as you like and hit Install
+![Recommended apps](/nextcloud/recommended_apps.png)
 
+# Resoving Nextcloud Warnings & Errors
+Nevigate to the `User Icon` -> `Administration settings`:
+![Administration settings](/nextcloud/admin_settings.png)
 
+You will some error & warnings, No we trying to fix them as much as possible
+![Security & setup warnings](/nextcloud/security_setup_warnings.png)
 
+### Fix: Some headers are not set correctly on your instance - The *Strict-Transport-Security* HTTP header is not set (should be at least *15552000* seconds). For enhanced security, it is recommended to enable HSTS.`
+edit `/etc/apache2/sites-available/nc.example.com-le-ssl.conf
+```bash
+sudo vim /etc/apache2/sites-available/nc.example.com-le-ssl.conf
+```
+add these lines below `ServerName`:
 
+```config
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=15552000; includeSubDomains"
+</IfModule>
+```
+it will looks like this:
+```config
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+    DocumentRoot "/var/www/nc.example.com"
+    ServerName nc.example.com
 
+    <IfModule mod_headers.c>
+      Header always set Strict-Transport-Security "max-age=15552000; includeSubDomains"
+    </IfModule>
+
+    <Directory "/var/www/nc.example.com/">
+        Options MultiViews FollowSymlinks
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+    TransferLog /var/log/apache2/nc.example.com_access.log
+    ErrorLog /var/log/apache2/nc.example.com_error.log
+
+SSLCertificateFile /etc/letsencrypt/live/nc.example.com/fullchain.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/nc.example.com/privkey.pem
+Include /etc/letsencrypt/options-ssl-apache.conf
+</VirtualHost>
+</IfModule>
+```
+save & exit and restart apache2:
+```bash
+sudo systemctl restart apache2
+sudo systemctl status apache2
+```
+
+### Fix: Detected some missing optional indices. Occasionally new indices are added (by Nextcloud or installed applications) to improve database performance. Adding indices can sometimes take awhile and temporarily hurt performance so this is not done automatically during upgrades. Once the indices are added, queries to those tables should be faster. Use the command *occ db:add-missing-indices* to add them. Missing indices: "mail_messages_strucanalyz_idx" in table "mail_messages", "mail_class_creat_idx" in table "mail_classifiers", "mail_acc_prov_idx" in table "mail_accounts", "mail_alias_accid_idx" in table "mail_aliases", "systag_by_objectid" in table "systemtag_object_mapping", "mail_messages_mb_id_uid_uidx" in table "mail_messages", "mail_smime_certs_uid_email_idx" in table "mail_smime_certificates", "mail_trusted_senders_idx" in table "mail_trusted_senders", "mail_coll_idx" in table "mail_coll_addresses".
+
+edit `/etc/php/8.1/mods-available/apcu.ini` to enable apc cli:
+```bash
+sudo vim /etc/php/8.1/mods-available/apcu.ini
+```
+add this line to the end of file:
+```config
+apc.enable_cli=1
+```
+it will somewhat looks like this:
+```config
+extension=apcu.so
+apc.enable_cli=1
+```
+
+make `occ` executable, and fix the issue by rinnig:
+```bash
+sudo chmod +x /var/www/nc.example.com/occ
+sudo -u www-data /var/www/nc.example.com/occ db:add-missing-indices
+sudo systemctl restart apache2
+sudo systemctl status apache2
+```
+
+### Fix:One or more mimetype migrations are available. Occasionally new mimetypes are added to better handle certain file types. Migrating the mimetypes take a long time on larger instances so this is not done automatically during upgrades. Use the command `occ maintenance:repair --include-expensive` to perform the migrations.
+run the following command to fix it:
+```bash
+sudo -u www-data /var/www/nc.example.com/occ maintenance:repair --include-expensive
+```
+
+### Fix: You are currently running PHP 8.1.2-1ubuntu2.19. PHP 8.1 is now deprecated in Nextcloud 30. Nextcloud 31 may require at least PHP 8.2. Please upgrade to one of the officially supported PHP versions provided by the PHP Group as soon as possible.
+
+I will not gonna fix this, if you want to fix, upgrade the php version to 8.2 or higher and reconfigure the previews steps.
+
+### Fix: Server has no maintenance window start time configured. This means resource intensive daily background jobs will also be executed during your main usage time. We recommend to set it to a time of low usage, so users are less impacted by the load caused from these heavy tasks. 
+
+No solution for now.
+
+# Install `coturn` and enable video calling from different IPs
+1. install `coturn`:
+```bash
+sudo apt install coturn
+sudo systemctl enable coturn
+sudo systemctl start coturn
+sudo systemctl status coturn
+```
+2. enable coturn by editing `/etc/default/coturn`
+```bash 
+sudo vim /etc/default/coturn
+```
+uncomment or add `TURNSERVER_ENABLED=1`
+
+3. Create Auth-Secret for static-auth-secret by runnig:
+```bash
+openssl rand -hex 32
+```
+
+4. Back up `/etc/turnserver.conf` and edit new one as follow:
+```bash
+sudo mv /etc/turnserver.conf /etc/turnserver.conf.original
+sudo vim /etc/turnserver.conf
+```
+add following lines to it, replace `YOUR_AUTH_SECRET` with your static-auth-secret that created in previews step, replace `nc.example.com` with your own domain:
+```config
+listening-port=3478
+fingerprint
+use-auth-secret
+static-auth-secret=YOUR_AUTH_SECRET
+realm=nc.example.com
+total-quota=100
+bps-capacity=0
+stale-nonce=600
+no-multicast-peers
+```
+
+5. now we restart `coturn` and check it's status to make sure everything is working:
+```bash
+sudo systemctl restart coturn 
+sudo systemctl status coturn 
+```
+
+6. enable `ufw` firewall and open `http`, `https`, `ssh`, `3478` ports:
+```bash
+sudo ufw enable
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow ssh
+sudo ufw allow 3478
+sudo ufw status
+```
+restart apache and coturn again by runnig:
+```bash
+sudo systemctl restart coturn
+sudo systemctl restart apache2
+```
+
+7. Nevigate to you brwoser window, `NextCloud` -> `User Icon` -> `Administration settings` -> `Talk`, add new TURN server
+![TURN server](/nextcloud/tune_server.png)
+fill these parts and you will see success icon on right side like this:
+![TURN server success](/nextcloud/tune_server_success.png)
+That is it, all set and done!
