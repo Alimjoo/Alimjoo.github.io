@@ -21,23 +21,24 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 
 @font-face {
   font-family: chiwer;
-  src: url(https://api.allorigins.win/raw?url=https://gitlab.com/Alimjoo/storage/-/raw/main/fonts/ukijchik.ttf);
+  // src: url(https://api.allorigins.win/raw?url=https://gitlab.com/Alimjoo/storage/-/raw/main/fonts/ukijchik.ttf);
+  src: url(http://piyazon.top/storage/assets/fonts/ukijchik.ttf);
 }
 @font-face {
   font-family: alpida;
-  src: url(https://api.allorigins.win/raw?url=https://gitlab.com/Alimjoo/storage/-/raw/main/fonts/alpida%20unicode%20system.ttf);
+  src: url(http://piyazon.top/storage/assets/fonts/alpida%20unicode%20system.ttf);
 }
 @font-face {
   font-family: ekran;
-  src: url(https://api.allorigins.win/raw?url=https://gitlab.com/Alimjoo/storage/-/raw/main/fonts/ukijekran.ttf);
+  src: url(http://piyazon.top/storage/assets/fonts/ukijekran.ttf);
 }
 @font-face {
   font-family: kesmetuz;
-  src: url(https://api.allorigins.win/raw?url=https://gitlab.com/Alimjoo/storage/-/raw/main/fonts/ukijkesmetuz.ttf);
+  src: url(http://piyazon.top/storage/assets/fonts/ukijkesmetuz.ttf);
 }
 @font-face {
   font-family: ukij_tor;
-  src: url(https://api.allorigins.win/raw?url=https://gitlab.com/Alimjoo/storage/-/raw/main/fonts/ukijtor.ttf);
+  src: url(http://piyazon.top/storage/assets/fonts/ukijtor.ttf);
 }
 
 
@@ -122,7 +123,7 @@ blockquote{
 #post-list .post-preview h1,
 .table-wrapper
 {
-  font-family: 'Lato', 'Microsoft Yahei', sans-serif, ekran;
+  font-family: ekran, 'Lato', 'Microsoft Yahei', sans-serif;
   font-weight: normal;
 }
 
